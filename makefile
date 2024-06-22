@@ -1,13 +1,14 @@
 backup:
 		brew list > brew/brew.txt
+		git config --get-regexp '^alias\.' > git/alias.txt
 
 stow:
-		stow --verbose --target=$$HOME/ tmux --adopt
-		stow --verbose --target=$$HOME/ alacritty --adopt
-	  stow --verbose --target=$$HOME/ nvim --adopt
+		stow --verbose --adopt --restow --target=$$HOME/ tmux
+		stow --verbose --adopt --restow --target=$$HOME/ alacritty
+	  stow --verbose --adopt --restow --target=$$HOME/ nvim
 
 zsh:
-		stow --verbose --target=$$HOME/ zsh --adopt
+		stow --verbose --adopt --restow --target=$$HOME/ zsh
 
 # credit
 # https://venthur.de/2021-12-19-managing-dotfiles-with-stow.html
