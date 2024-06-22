@@ -148,17 +148,6 @@ echo 'Updating Homebrew...' && brew update && brew upgrade;
 echo 'Updating GCloud...' && echo 'Y' | gcloud components update;
 #echo 'Updating Rust...' && rustup update
 "
-alias bkp="
-echo 'Backup Homebrew to gist' && \
-brew list > export_brew.txt && \
-gh gist edit a834ab62107cf8fb52405c015a367213 -f brew.txt export_brew.txt && \
-rm export_brew.txt;
-
-echo 'Backup TMUX to gist' && \
-cat ~/.tmux.conf > export_tmux.txt && \
-gh gist edit 9cfed35c17e4be54ae51b327fc2a48b2 -f tmux.conf export_tmux.txt && \
-rm export_tmux.txt
-"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
