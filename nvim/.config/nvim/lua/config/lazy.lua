@@ -17,6 +17,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.yaml" },
     { import = "lazyvim.plugins.extras.lang.python" },
     { import = "lazyvim.plugins.extras.lang.go" },
+    { import = "lazyvim.plugins.extras.lang.terraform" },
     -- { import = "lazyvim.plugins.extras.editor.aerial" },
     -- { import = "lazyvim.plugins.extras.util.gitui" },
     { import = "lazyvim.plugins.extras.ui.treesitter-context" },
