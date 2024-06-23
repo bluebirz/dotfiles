@@ -153,6 +153,7 @@ zimg
 zstd
 alt-tab
 calibre
+font-geist-mono-nerd-font
 font-jetbrains-mono-nerd-font
 google-cloud-sdk
 kitty
