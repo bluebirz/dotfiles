@@ -24,6 +24,7 @@ gh
 giflib
 gifsicle
 git
+git-prompt-string
 gitversion
 glib
 glow
