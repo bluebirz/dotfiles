@@ -5,7 +5,7 @@ import = [ "~/.config/alacritty/themes/themes/tokyo-night-storm.toml" ]
 [window]
 decorations = "buttonless"
 dynamic_padding = false
-opacity = 0.9
+opacity = 0.93
 
 [window.padding]
 x = 9

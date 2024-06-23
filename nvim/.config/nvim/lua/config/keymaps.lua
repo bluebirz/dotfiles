@@ -3,4 +3,6 @@
 -- Add any additional keymaps here
 -- fzflua
 vim.keymap.set("n", "<c-P>", "<cmd>lua require('fzf-lua').files()<CR>", { silent = true })
+
 vim.keymap.set("n", "<leader>jq", "<cmd>%!jq .<CR>")
+vim.keymap.set("n", "<leader>yq", "<cmd>%!yq .<CR>")
