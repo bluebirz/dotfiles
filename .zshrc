@@ -149,6 +149,8 @@ echo 'Updating GCloud...' && echo 'Y' | gcloud components update;
 #echo 'Updating Rust...' && rustup update
 "
 
+alias nv="nvim ."
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"

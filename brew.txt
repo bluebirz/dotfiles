@@ -151,12 +151,11 @@ yarn
 zeromq
 zimg
 zstd
-alacritty
 alt-tab
 calibre
-font-code-new-roman-nerd-font
-font-monaspace
+font-jetbrains-mono-nerd-font
 google-cloud-sdk
+kitty
 numi
 obsidian
 orbstack
