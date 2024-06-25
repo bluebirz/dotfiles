@@ -39,6 +39,9 @@ fpath=(~/.zsh $fpath)
 
 autoload -Uz compinit && compinit
 
+# enable zoxide
+eval "$(zoxide init zsh)"
+
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
 
@@ -149,8 +152,8 @@ echo 'Updating GCloud...' && echo 'Y' | gcloud components update;
 #echo 'Updating Rust...' && rustup update
 "
 
-alias nv="nvim ."
-
+alias nv="nvim ." # nvim
+alias cd="z" # zoxide
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -170,4 +173,5 @@ unset __conda_setup
 # Created by `pipx` on 2024-05-26 13:01:32
 export PATH="$PATH:/Users/bluebirz/.local/bin"
 
+# Enable oh-my-posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen.toml)"
