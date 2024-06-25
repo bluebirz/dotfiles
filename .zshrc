@@ -40,7 +40,7 @@ fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
 
 # enable zoxide
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -153,7 +153,6 @@ echo 'Updating GCloud...' && echo 'Y' | gcloud components update;
 "
 
 alias nv="nvim ." # nvim
-alias cd="z" # zoxide
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
