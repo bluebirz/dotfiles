@@ -10,7 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="frontcube"
-ZSH_THEME="refined"
+# ZSH_THEME="refined"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -169,3 +169,5 @@ unset __conda_setup
 
 # Created by `pipx` on 2024-05-26 13:01:32
 export PATH="$PATH:/Users/bluebirz/.local/bin"
+
+eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen.toml)"

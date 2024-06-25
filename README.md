@@ -26,9 +26,23 @@
 
 - install via homebrew
 
+## [oh-my-posh](https://ohmyposh.dev/)
+
+- install via homebrew
+- update prompt at <https://ohmyposh.dev/docs/installation/prompt>
+
+  - zsh
+
+  ```shell
+  eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen.toml)"
+  ```
+
+  - do `source ~/.zshrc`
+
 ## [tmux](https://github.com/tmux/tmux/wiki)
 
 - install via homebrew
+- install [tpm](https://github.com/tmux-plugins/tpm)
 
 ## [zsh](https://ohmyz.sh)
 
