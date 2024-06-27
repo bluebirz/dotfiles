@@ -23,7 +23,6 @@ numi
 obsidian
 orbstack
 pandoc
-pipx
 python@3.11
 python@3.12
 r
