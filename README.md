@@ -38,6 +38,7 @@
   ```
 
   - do `source ~/.zshrc`
+  - icons from <https://www.nerdfonts.com/cheat-sheet>
 
 ## [tmux](https://github.com/tmux/tmux/wiki)
 

@@ -37,14 +37,14 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
     style = 'plain'
     foreground = 'transparent'
     background = '#5184F3'
-    template = '  {{.Project}} '
+    template = ' 󱇶 {{.Project}} '
 
   [[blocks.segments]]
     type = 'aws'
     style = 'plain'
     foreground = 'transparent'
     background = '#F58534'
-    template = '  {{.Profile}}{{if .Region}}@{{.Region}}{{end}} '
+    template = '   {{.Profile}}{{if .Region}}@{{.Region}}{{end}} '
 
 
 [[blocks]]
@@ -71,36 +71,36 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
     type = "python"
     foreground = "#FFE873"
     background = "transparent"
-    # template = "  {{ .Venv }} {{ .Full }} "
-    template = " py {{ .Venv }} {{ .Full }} "
+    template = "  {{ .Venv }} {{ .Full }} "
+    # template = " py {{ .Venv }} {{ .Full }} "
 
   [[blocks.segments]]
     type = "node"
     foreground = "#539E43"
     background = "transparent"
-    # template = "  {{ .Full }} "
-    template = " node {{ .Full }} "
+    template = "  {{ .Full }} "
+    # template = " node {{ .Full }} "
 
   [[blocks.segments]]
     type = "go"
     foreground = "#79D4FD"
     background = "transparent"
-    # template = " ﳑ {{ .Full }} "
-    template = " go {{ .Full }} "
+    template = "  {{ .Full }} "
+    # template = " go {{ .Full }} "
 
   [[blocks.segments]]
     type = "terraform"
     foreground = "#5C4EE6"
     background = "transparent"
-    # template = "{{.WorkspaceName}}"
-    template = " tf {{.WorkspaceName}} "
+    template = " 󱁢 {{.WorkspaceName}} "
+    # template = " tf {{.WorkspaceName}} "
 
   [[blocks.segments]]
     type = "rust"
     foreground = "#F66601"
     background = "transparent"
-    # template = "  {{ .Full }} "
-    template = " rs {{ .Full }} "
+    template = "  {{ .Full }} "
+    # template = " rs {{ .Full }} "
 # end of programming languages version prompt
 
   [[blocks.segments]]
