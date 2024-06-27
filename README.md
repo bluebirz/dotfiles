@@ -47,7 +47,7 @@
 ## [zsh](https://ohmyz.sh)
 
 - install via `curl`
-- using theme `refined`
+- ~~using theme `refined`~~ using oh-my-posh theme in toml file.
 
 ## [makefile](https://makefiletutorial.com/)
 
