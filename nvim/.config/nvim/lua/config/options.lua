@@ -4,3 +4,14 @@
 vim.opt.wrap = true
 vim.opt.whichwrap = "b,s,<,>,h,l"
 vim.opt.relativenumber = true
+vim.opt.list = true
+vim.opt.listchars = {
+  tab = "→ ",
+  space = "•",
+  eol = "↵",
+  trail = "␣",
+  extends = "»",
+  precedes = "«",
+  nbsp = "~",
+}
+vim.opt.showbreak = "↪ "
