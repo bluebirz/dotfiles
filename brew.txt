@@ -33,8 +33,10 @@ rustup-init
 stow
 terraform
 terragrunt
+tldr
 tmux
 tree
 tree-sitter
 yarn
+zellij
 zoxide
