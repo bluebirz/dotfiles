@@ -1,5 +1,6 @@
 alt-tab
 awscli
+bat
 black
 calibre
 ffmpeg
