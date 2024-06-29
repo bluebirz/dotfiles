@@ -49,6 +49,11 @@
 
 - install via `curl`
 - ~~using theme `refined`~~ using oh-my-posh theme in toml file.
+- `source` aliases into the `.zshrc` by adding this row
+
+  ```sh
+  source ~/.zsh/alias.sh
+  ```
 
 ## [makefile](https://makefiletutorial.com/)
 

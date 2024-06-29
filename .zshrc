@@ -145,14 +145,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+source ~/.zsh/alias.sh
 
-alias upd="
-echo 'Updating Homebrew...' && brew update && brew upgrade;
-echo 'Updating GCloud...' && echo 'Y' | gcloud components update;
-#echo 'Updating Rust...' && rustup update
-"
-
-alias nv="nvim ." # nvim
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -173,4 +167,4 @@ unset __conda_setup
 export PATH="$PATH:/Users/bluebirz/.local/bin"
 
 # Enable oh-my-posh
-eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen.toml)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen-icons.toml)"

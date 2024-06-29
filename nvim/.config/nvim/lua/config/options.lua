@@ -15,3 +15,4 @@ vim.opt.listchars = {
   nbsp = "~",
 }
 vim.opt.showbreak = "↪ "
+vim.g.root_spec = { "cwd" }
