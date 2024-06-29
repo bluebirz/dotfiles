@@ -11,6 +11,7 @@
 	acp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
 	fpa = "!f() { git fetch --all && git pull --all && git remote prune origin; }; f"
 	mdr = "!f() { git merge --no-commit --no-ff $@ && git reset --merge; }; f"
+	mrg = "!f() { git merge $1 -m \"$2\" --no-ff  && git push; }; f"
 	stt = status -u
 	ckb = "!f() { git checkout -b $@ && git push --set-upstream origin $@; }; f"
 	dff = diff -u
