@@ -1,4 +1,4 @@
-alias lsofp="sudo lsof -iTCP -sTCP:LISTEN -n -P"
+alias lsof="sudo lsof -iTCP -sTCP:LISTEN -n -P"
 alias upd="
 echo 'Updating Homebrew...' && brew update && brew upgrade;
 echo 'Updating GCloud...' && echo 'Y' | gcloud components update;
