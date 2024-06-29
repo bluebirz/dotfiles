@@ -10,6 +10,15 @@
 
 [credit](https://blog.chaitanyashahare.com/posts/11-how-to-install-alacritty-on-macos-ventura/)
 
+## git
+
+- include `alias.toml` by adding this into `.gitconfig`
+
+  ```toml
+  [include]
+    path = ~/.config/git/alias.toml
+  ```
+
 ## [brew](https://brew.sh)
 
 - install homebrew packages:

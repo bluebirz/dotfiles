@@ -1,0 +1,10 @@
+[alias]
+	lob = log --all --graph --abbrev-commit --decorate --date=format-local:'%Y-%m-%d %H:%M:%S' --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%ad%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+	acp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+	fpa = "!f() { git fetch --all && git pull --all && git remote prune origin; }; f"
+	mdr = "!f() { git merge --no-commit --no-ff $@ && git reset --merge; }; f"
+	mrg = "!f() { git merge $1 -m \"$2\" --no-ff  && git push; }; f"
+	stt = status -u
+	ckb = "!f() { git checkout -b $@ && git push --set-upstream origin $@; }; f"
+	dff = diff -u
+	cko = checkout

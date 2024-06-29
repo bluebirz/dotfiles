@@ -38,5 +38,6 @@ tmux
 tree
 tree-sitter
 yarn
+yq
 zellij
 zoxide
