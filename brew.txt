@@ -42,3 +42,4 @@ yarn
 yq
 zellij
 zoxide
+zsh
