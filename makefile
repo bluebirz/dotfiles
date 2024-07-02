@@ -4,10 +4,10 @@
 	# cp $$HOME/.gitconfig ./
 
 brew-install:
-	cat brew.txt | xargs brew install
+	cat brew/brew-$(type).txt | xargs brew install
 
 brew-uninstall:
-	cat brew.txt | xargs brew uninstall
+	cat brew/brew-$(type).txt | xargs brew uninstall
 
 zsh:
 	if test -f $$HOME/.zshrc ; then 

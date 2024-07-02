@@ -31,10 +31,11 @@
 
 ## [brew](https://brew.sh)
 
-- install homebrew packages:
+- install/uninstall homebrew packages, referring `brew/brew-*.txt`:
 
   ```shell
-  make brew-install
+  make brew-install type=[personal|work]
+  make brew-uninstall type=[personal|work]
   ```
 
 ## [kitty](https://sw.kovidgoyal.net/kitty/)

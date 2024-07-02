@@ -1,4 +1,5 @@
 alt-tab
+fastfetch
 awscli
 bat
 black
