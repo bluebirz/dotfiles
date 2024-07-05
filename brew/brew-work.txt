@@ -1,5 +1,7 @@
 bat
 black
+docker
+docker-compose
 fastfetch
 font-geist-mono-nerd-font
 font-jetbrains-mono-nerd-font

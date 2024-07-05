@@ -1,9 +1,11 @@
 alt-tab
-fastfetch
 awscli
 bat
 black
 calibre
+docker
+docker-compose
+fastfetch
 ffmpeg
 font-geist-mono-nerd-font
 font-jetbrains-mono-nerd-font

@@ -6,3 +6,6 @@ vim.keymap.set("n", "<c-P>", "<cmd>lua require('fzf-lua').files()<CR>", { silent
 
 vim.keymap.set("n", "<leader>jq", "<cmd>%!jq .<CR>")
 vim.keymap.set("n", "<leader>yq", "<cmd>%!yq .<CR>")
+
+vim.keymap.set("n", "<leader>dt", "<cmd>vertical difft<CR>")
+vim.keymap.set("n", "<leader>do", "<cmd>diffo<CR>")
