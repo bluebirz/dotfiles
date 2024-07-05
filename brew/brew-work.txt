@@ -3,6 +3,7 @@ black
 docker
 docker-compose
 fastfetch
+fd
 font-geist-mono-nerd-font
 font-jetbrains-mono-nerd-font
 fzf

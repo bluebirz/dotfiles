@@ -2,10 +2,11 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 -- fzflua
-vim.keymap.set("n", "<c-P>", "<cmd>lua require('fzf-lua').files()<CR>", { silent = true })
+vim.keymap.set("n", "<C-P>", require("fzf-lua").files, { desc = "Fzf Files" })
+vim.keymap.set("n", "<C-G>", require("fzf-lua").live_grep, { desc = "Fzf Live grep" })
 
-vim.keymap.set("n", "<leader>jq", "<cmd>%!jq .<CR>")
-vim.keymap.set("n", "<leader>yq", "<cmd>%!yq .<CR>")
+vim.keymap.set("n", "<leader>jq", "<cmd>%!jq .<CR>", { desc = "jq" })
+vim.keymap.set("n", "<leader>yq", "<cmd>%!yq .<CR>", { desc = "yq" })
 
-vim.keymap.set("n", "<leader>dt", "<cmd>vertical difft<CR>")
-vim.keymap.set("n", "<leader>do", "<cmd>diffo<CR>")
+vim.keymap.set("n", "<leader>dt", "<cmd>vertical difft<CR>", { desc = "start diffthis" })
+vim.keymap.set("n", "<leader>do", "<cmd>diffo<CR>", { desc = "diffoff" })

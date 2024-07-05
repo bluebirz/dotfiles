@@ -6,6 +6,7 @@ calibre
 docker
 docker-compose
 fastfetch
+fd
 ffmpeg
 font-geist-mono-nerd-font
 font-jetbrains-mono-nerd-font
