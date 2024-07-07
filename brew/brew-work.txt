@@ -4,8 +4,7 @@ docker
 docker-compose
 fastfetch
 fd
-font-geist-mono-nerd-font
-font-jetbrains-mono-nerd-font
+font-fantasque-sans-mono-nerd-font
 fzf
 gh
 git
