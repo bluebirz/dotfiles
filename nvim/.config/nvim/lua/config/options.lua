@@ -16,3 +16,6 @@ vim.opt.listchars = {
 }
 vim.opt.showbreak = "↪ "
 vim.g.root_spec = { "cwd" }
+
+-- nord theme
+vim.g.nord_disable_background = true

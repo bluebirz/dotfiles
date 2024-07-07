@@ -4,7 +4,8 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons", "mikesmithgh/git-prompt-string-lualine.nvim" },
     opts = function(_, opts)
       opts.options = {
-        theme = "codedark",
+        -- theme = "codedark",
+        theme = "nord",
         -- component_separators = { left = '', right = ''},
         -- section_separators = { left = '', right = ''},
         component_separators = { left = "", right = "" },
@@ -21,9 +22,9 @@ return {
             -- added = "LuaLineDiffAdd", -- Changes the diff's added color
             -- modified = "LuaLineDiffChange", -- Changes the diff's modified color
             -- removed = "LuaLineDiffDelete", -- Changes the diff's removed color you
-            added = { fg = "#2b9416" }, -- Changes the diff's added color
-            modified = { fg = "#99911a" }, -- Changes the diff's modified color
-            removed = { fg = "#9c2721" }, -- Changes the diff's removed color you
+            -- added = { fg = "#2b9416" }, -- Changes the diff's added color
+            -- modified = { fg = "#99911a" }, -- Changes the diff's modified color
+            -- removed = { fg = "#9c2721" }, -- Changes the diff's removed color you
           },
           -- symbols = { added = "+", modified = "~", removed = "-" }, -- Changes the symbols used by the diff.
           -- symbols = { added = "󰜄 ", modified = " ", removed = "󰛲 " }, -- Changes the symbols used by the diff.
