@@ -1,6 +1,7 @@
 return {
   "cameron-wags/rainbow_csv.nvim",
   config = true,
+  event = "VeryLazy",
   ft = {
     "csv",
     "tsv",
