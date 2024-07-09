@@ -13,6 +13,7 @@ google-cloud-sdk
 graphite2
 graphviz
 htop
+http-server
 jandedobbeleer/oh-my-posh/oh-my-posh
 jq
 kitty
@@ -20,7 +21,6 @@ mikesmithgh/homebrew-git-prompt-string/git-prompt-string
 neovim
 node
 orbstack
-pandoc
 python@3.11
 python@3.12
 rectangle

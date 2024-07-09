@@ -17,6 +17,7 @@ google-cloud-sdk
 graphite2
 graphviz
 htop
+http-server
 jandedobbeleer/oh-my-posh/oh-my-posh
 jq
 kitty

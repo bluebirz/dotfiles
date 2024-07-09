@@ -28,7 +28,7 @@ stow:
 unstow:
 	stow --verbose --target=$$HOME --delete */
 
-clear-nvim:
+clear-cache-nvim:
 	rm -rf $$HOME/.local/share/nvim
 	rm -rf $$HOME/.local/state/nvim/shada/
 # credit

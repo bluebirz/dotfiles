@@ -1,17 +1,18 @@
+vim.g.nord_disable_background = true
+
 return {
   "shaunsingh/nord.nvim",
-  -- opts = {
-  --   nord_disable_background = true,
-  -- },
-  -- opts = {
-  --   transparent = true,
-  --   styles = {
-  --     sidebars = "transparent",
-  --     floats = "transparent",
-  --   },
-  -- },
   -- config = function()
-  --   -- calling `setup` is optional for customization
-  --   require("nord").setup({})
+  --   local highlights = require("nord").bufferline.highlights({
+  --     italic = true,
+  --     bold = true,
+  --   })
+  --
+  --   require("bufferline").setup({
+  --     options = {
+  --       separator_style = "thin",
+  --     },
+  --     highlights = highlights,
+  --   })
   -- end,
 }

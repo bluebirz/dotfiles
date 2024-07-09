@@ -87,4 +87,4 @@
 - `ohmyzsh` to install `oh-my-zsh`
 - `stow` to make symlinks for all folders
 - `unstow` to delete all symlinks
-- `clear-nvim` to delete all nvim cache (use after remove nvim)
+- `clear-cache-nvim` to delete all nvim cache (use after remove nvim)
