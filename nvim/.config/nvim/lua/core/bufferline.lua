@@ -11,6 +11,11 @@ return {
       separator_style = "thin",
       show_close_icon = false,
       show_buffer_close_icons = false,
+      color_icons = false,
+      indicator = {
+        style = "underline",
+      },
+      -- highlights = require("nord.plugins.bufferline").akinsho(),
     },
   },
 }
