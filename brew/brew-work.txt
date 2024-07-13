@@ -1,5 +1,7 @@
+atuin
 bat
 black
+direnv
 docker
 docker-compose
 fastfetch

@@ -39,9 +39,6 @@ fpath=(~/.zsh $fpath)
 
 autoload -Uz compinit && compinit
 
-# enable zoxide
-eval "$(zoxide init --cmd cd zsh)"
-
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
 
@@ -85,6 +82,7 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
+  direnv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -145,7 +143,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source ~/.zsh/alias.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -162,9 +159,12 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-
 # Created by `pipx` on 2024-05-26 13:01:32
 export PATH="$PATH:/Users/bluebirz/.local/bin"
 
-# Enable oh-my-posh
-eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen-icons.toml)"
+
+source ~/.zsh/alias.sh
+source ~/.zsh/addons.sh
+
+# run fastfetch
+fastfetch

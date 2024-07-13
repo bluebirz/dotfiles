@@ -1,8 +1,10 @@
 alt-tab
+atuin
 awscli
 bat
 black
 calibre
+direnv
 docker
 docker-compose
 fastfetch

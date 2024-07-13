@@ -22,6 +22,15 @@ ohmyzsh:
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 	sh install.sh
 
+# zsh-add-source:
+	# source_list=( "$$HOME/.zsh/alias.sh" "$$HOME/.zsh/addons.sh" )
+	# for src in $$source_list; do
+		# if [[ ! -z $(cat $$HOME/.zshrc | grep "source "$$src) ]]; then 
+			# echo $$src; 
+		# fi;
+	# done
+	# echo "$$source_list"
+
 stow:
 	stow --verbose --adopt --restow --target=$$HOME/ */
 
