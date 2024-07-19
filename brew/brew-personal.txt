@@ -28,6 +28,7 @@ neovim
 node
 numi
 obsidian
+openssh
 orbstack
 pandoc
 python@3.11
@@ -37,6 +38,7 @@ rectangle
 ripgrep
 rstudio
 rustup-init
+sketchybar
 stow
 terraform
 terragrunt
