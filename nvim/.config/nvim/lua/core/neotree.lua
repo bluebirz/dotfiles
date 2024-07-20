@@ -51,6 +51,7 @@ return {
     filesystem = {
       filtered_items = {
         visible = true,
+        show_hidden_count = true,
         hide_dotfiles = false,
         hide_gitignored = false,
         hide_by_name = {
@@ -60,6 +61,11 @@ return {
         },
         never_show = { ".git" },
       },
+      follow_current_file = {
+        enabled = true,
+        leave_dirs_open = false,
+      },
     },
+    buffers = { follow_current_file = { enable = true } },
   },
 }
