@@ -10,3 +10,5 @@ vim.keymap.set("n", "<leader>yq", "<cmd>%!yq .<CR>", { desc = "yq" })
 
 vim.keymap.set("n", "<leader>dt", "<cmd>vertical difft<CR>", { desc = "start diffthis" })
 vim.keymap.set("n", "<leader>do", "<cmd>diffo<CR>", { desc = "diffoff" })
+
+vim.keymap.set("n", "<leader>e", "<cmd>Neotree reveal<CR>")
