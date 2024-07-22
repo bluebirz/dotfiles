@@ -121,7 +121,9 @@ return {
     opts = {
       ensure_installed = {
         "bash",
+        "graphql",
         "html",
+        "http",
         "javascript",
         "json",
         "lua",
@@ -133,6 +135,7 @@ return {
         "tsx",
         "typescript",
         "vim",
+        "xml",
         "yaml",
       },
     },
