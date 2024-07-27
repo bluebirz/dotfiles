@@ -14,5 +14,21 @@ return {
     config = function()
       require("rest-nvim").setup()
     end,
+    keys = {
+      {
+        "<leader>Rr",
+        "<cmd>Rest run<CR>",
+        desc = "RestNvim",
+        noremap = true,
+        silent = true,
+      },
+      {
+        "<leader>Rl",
+        "<cmd>Rest run last<CR>",
+        desc = "RestNvimLast",
+        noremap = true,
+        silent = true,
+      },
+    },
   },
 }
