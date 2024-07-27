@@ -10,7 +10,7 @@ return {
   opts = {
     -- save_path = "~/Pictures",
     save_path = "~/Desktop",
-    code_font_family = "GeistMono Nerd Font",
+    code_font_family = "FantasqueSansM Nerd Font",
     has_breadcrumbs = false,
     bg_theme = "sea",
     watermark = "",

@@ -7,4 +7,16 @@ return {
     -- calling `setup` is optional for customization
     require("fzf-lua").setup({})
   end,
+  keys = {
+    {
+      "<C-P>",
+      "<cmd>FzfLua files<CR>",
+      desc = "Fzf Files",
+    },
+    {
+      "<C-G>",
+      "<cmd>FzfLua live_grep<CR>",
+      desc = "Fzf Live grep",
+    },
+  },
 }

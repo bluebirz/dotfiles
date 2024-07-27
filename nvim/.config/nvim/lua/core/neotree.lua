@@ -68,4 +68,7 @@ return {
     },
     buffers = { follow_current_file = { enable = true } },
   },
+  keys = {
+    { "<leader>e", "<cmd>Neotree reveal<CR>" },
+  },
 }
