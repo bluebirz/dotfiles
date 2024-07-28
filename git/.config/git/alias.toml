@@ -11,3 +11,6 @@
   stt = status -u
   baa = branch -a
   rsh = reset --soft HEAD^
+  wta = worktree add
+  wtl = worktree list
+  wtr = worktree remove
