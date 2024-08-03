@@ -27,6 +27,7 @@ mikesmithgh/homebrew-git-prompt-string/git-prompt-string
 neovim
 node
 numi
+nvm
 obsidian
 openssh
 orbstack

@@ -9,3 +9,5 @@ vim.keymap.set("n", "<leader>dt", "<cmd>vertical difft<CR>", { desc = "start dif
 vim.keymap.set("n", "<leader>do", "<cmd>diffo<CR>", { desc = "diffoff" })
 
 vim.keymap.set("n", "<C-a>", "ggVG", { desc = "Select all" })
+
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Quit terminal mode" })

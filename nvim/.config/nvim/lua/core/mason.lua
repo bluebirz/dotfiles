@@ -29,6 +29,7 @@ return {
       "stylua",
       "terraform-ls",
       "tflint",
+      "typescript-language-server",
       "yaml-language-server",
     },
   },
