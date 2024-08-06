@@ -6,7 +6,7 @@ docker
 docker-compose
 fastfetch
 fd
-font-fantasque-sans-mono-nerd-font
+font-code-new-roman-nerd-font
 fzf
 gh
 git

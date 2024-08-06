@@ -10,7 +10,7 @@ docker-compose
 fastfetch
 fd
 ffmpeg
-font-fantasque-sans-mono-nerd-font
+font-code-new-roman-nerd-font
 fzf
 gh
 git
