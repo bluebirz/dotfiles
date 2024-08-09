@@ -18,6 +18,7 @@ go
 google-cloud-sdk
 graphite2
 graphviz
+gum
 htop
 http-server
 jandedobbeleer/oh-my-posh/oh-my-posh
