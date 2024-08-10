@@ -22,7 +22,7 @@ sketchybar-init:
 	brew tap FelixKratz/formulae
 	brew install sketchybar
 	brew services start sketchybar
-	echo "defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 25"
+	echo "defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 24"
 	# cr: https://www.josean.com/posts/sketchybar-setup
 
 sketchybar-restart:

@@ -20,6 +20,7 @@ if [ "$SENDER" = "front_app_switched" ]; then
   "FaceTime") ICON= ;;
   "Finder") ICON_COLOR=0xff40b9ff ICON=󰀶 ;;
   "Firefox") ICON=󰈹 ;;
+  "Font Book") ICON= ;;
   "Google Chrome") ICON= ;;
   "IINA") ICON=󰕼 ;;
   "Messages") ICON=󰍦 ;;
