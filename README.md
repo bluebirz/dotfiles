@@ -9,6 +9,7 @@
 - `oh-my-zsh`: a framework for `zsh`
 - `oh-my-posh`: prompt theme on top of `zsh`
 - `tmux`: terminal multiplexer for workspaces
+- `sketchybar`:  a highly flexible, customizable, fast and powerful status bar replacement
 
 ## [Alacritty](https://alacritty.org)
 
@@ -43,6 +44,10 @@
 - install via homebrew
 
 ## [nvim](https://neovim.io) (with [lazyvim](https://www.lazyvim.org))
+
+- install via homebrew
+
+## [sketchybar](https://github.com/FelixKratz/SketchyBar)
 
 - install via homebrew
 
@@ -85,6 +90,8 @@
 - `brew-install` to install packages via homebrew
 - `brew-uninstall` to uninstall packages
 - `zsh` to install `zsh`
+- `sketchybar-init` to install and start sketchybar service
+- `sketchybar-restart` to restart sketchybar service
 - `ohmyzsh` to install `oh-my-zsh`
 - `stow` to make symlinks for all folders
 - `unstow` to delete all symlinks

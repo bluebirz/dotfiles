@@ -17,7 +17,17 @@ zsh:
 	fi
 	echo $$SHELL
 	$$SHELL --version
-	
+
+sketchybar-init:
+	brew tap FelixKratz/formulae
+	brew install sketchybar
+	brew services start sketchybar
+	echo "defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 25"
+	# cr: https://www.josean.com/posts/sketchybar-setup
+
+sketchybar-restart:
+	brew services restart sketchybar
+
 ohmyzsh:
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 	sh install.sh
