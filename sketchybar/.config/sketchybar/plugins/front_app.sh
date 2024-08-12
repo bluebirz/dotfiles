@@ -24,6 +24,7 @@ if [ "$SENDER" = "front_app_switched" ]; then
   "Google Chrome") ICON= ;;
   "IINA") ICON=󰕼 ;;
   "Messages") ICON=󰍦 ;;
+  "Microsoft Edge") ICON= ;;
   "Microsoft Teams") ICON=󰊻 ;;
   "Notes") ICON= ;;
   "Notion") ICON_COLOR=#ff000000 ICON=󰈄 ;;
@@ -37,7 +38,6 @@ if [ "$SENDER" = "front_app_switched" ]; then
   "System Settings") ICON= ;;
   "TextEdit") ICON= ;;
   "Transmission") ICON=󰶘 ;;
-  "edge") ICON= ;;
   "kitty") ICON=󰄛 ;;
   # *) ICON_COLOR=0xffff94c6 ICON=﯂ ;;
   esac
