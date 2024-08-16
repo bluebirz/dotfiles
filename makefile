@@ -28,6 +28,8 @@ sketchybar-init:
 sketchybar-restart:
 	brew services restart sketchybar
 
+# devbox-init:
+
 ohmyzsh:
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 	sh install.sh

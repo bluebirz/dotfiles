@@ -162,9 +162,11 @@ unset __conda_setup
 # Created by `pipx` on 2024-05-26 13:01:32
 export PATH="$PATH:/Users/bluebirz/.local/bin"
 
-
 source ~/.zsh/alias.sh
 source ~/.zsh/addons.sh
+
+# Enable oh-my-posh
+eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen-icons.toml)"
 
 # run fastfetch
 fastfetch

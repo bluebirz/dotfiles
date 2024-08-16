@@ -31,3 +31,5 @@ autocmd WinEnter * call s:UndimActiveWindow()
 autocmd BufEnter * call s:UndimActiveWindow()
 autocmd WinLeave * call s:DimInactiveWindow()
 ]])
+
+-- vim.cmd([[highlight Visual cterm=bold ctermbg=none ctermfg=none]])

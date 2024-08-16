@@ -18,8 +18,8 @@ sketchybar --bar position=top height=24 blur_radius=24 color=0x40000000
 # We now change some default values, which are applied to all further items.
 # For a full list of all available item properties see:
 # https://felixkratz.github.io/SketchyBar/config/items
-FONT="CodeNewRoman Nerd Font"
-# FONT="SF Pro"
+# FONT="CodeNewRoman Nerd Font"
+FONT="CommitMono Nerd Font"
 
 default=(
   padding_left=3
