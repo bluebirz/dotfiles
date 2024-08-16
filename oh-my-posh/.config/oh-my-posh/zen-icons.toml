@@ -107,21 +107,24 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
     type = 'text'
     style = 'plain'
     foreground_templates = [
-      "{{if gt .Code 0}}red{{end}}",
-      "{{if eq .Code 0}}cyan{{end}}",
+      "{{if gt .Code 0}}#e68d27{{end}}",
+      "{{if eq .Code 0}}#2780e6{{end}}",
     ]
     background = 'transparent'
-    template = '󱗆 ❯'
+    # template = '󱗆 ❯'
+    template = "➜"
 
 [transient_prompt]
   foreground_templates = [
-    "{{if gt .Code 0}}red{{end}}",
-    "{{if eq .Code 0}}cyan{{end}}",
+    "{{if gt .Code 0}}#e68d27{{end}}",
+    "{{if eq .Code 0}}#2780e6{{end}}",
   ]
   background = 'transparent'
-  template = '󱗆 ❯ '
+  # template = '󱗆 ❯ '
+  template = "➜ "
 
 [secondary_prompt]
-  foreground = 'cyan'
+  foreground = '#2780e6'
   background = 'transparent'
-  template = '󱗆 ❯❯ '
+  # template = '󱗆 ❯❯ '
+  template = "➜ "
