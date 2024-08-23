@@ -1,4 +1,5 @@
 alt-tab
+amethyst
 atuin
 awscli
 bat
@@ -37,7 +38,6 @@ pandoc
 python@3.11
 python@3.12
 r
-rectangle
 ripgrep
 rstudio
 rustup-init
