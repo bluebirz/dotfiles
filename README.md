@@ -1,5 +1,9 @@
 # Dotfiles
 
+## snapshot @ 2024-08-25
+
+![snapshot](./_img/Screenshot%202567-08-25%20at%2009.17.58.png)
+
 ## Current setup
 
 - `brew`: package manager
@@ -10,6 +14,7 @@
 - `oh-my-posh`: prompt theme on top of `zsh`
 - `tmux`: terminal multiplexer for workspaces
 - `sketchybar`:  a highly flexible, customizable, fast and powerful status bar replacement
+- `amethyst`: a tiling window manager for macos
 
 ## [Alacritty](https://alacritty.org)
 
@@ -84,6 +89,10 @@
   source ~/.zsh/alias.sh
   source ~/.zsh/addons.sh
   ```
+
+## [amethyst](https://github.com/ianyh/Amethyst)
+
+- install via homebrew
 
 ## [makefile](https://makefiletutorial.com/)
 
