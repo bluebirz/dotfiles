@@ -55,6 +55,8 @@
 ## [sketchybar](https://github.com/FelixKratz/SketchyBar)
 
 - install via homebrew
+- use makefile
+- hide menubar in "setting > control center"
 
 ## [oh-my-zsh](https://ohmyz.sh)
 

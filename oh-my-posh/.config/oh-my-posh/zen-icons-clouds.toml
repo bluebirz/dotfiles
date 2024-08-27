@@ -112,7 +112,7 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
     ]
     background = 'transparent'
     # template = '󱗆 ❯'
-    template = "➜"
+    template = ""
 
 [transient_prompt]
   foreground_templates = [
@@ -121,10 +121,10 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
   ]
   background = 'transparent'
   # template = '󱗆 ❯ '
-  template = "➜ "
+  template = " "
 
 [secondary_prompt]
   foreground = '#2780e6'
   background = 'transparent'
   # template = '󱗆 ❯❯ '
-  template = "➜ "
+  template = " "
