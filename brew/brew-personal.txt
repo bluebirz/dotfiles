@@ -13,6 +13,7 @@ fd
 ffmpeg
 font-code-new-roman-nerd-font
 font-commit-mono-nerd-font
+font-hasklug-nerd-font
 fzf
 gh
 git
