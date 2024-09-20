@@ -1,8 +1,8 @@
 # Dotfiles
 
-## snapshot @ 2024-08-25
+## snapshot @ 2024-09-20
 
-![snapshot](./_img/Screenshot%202567-08-25%20at%2009.17.58.png)
+![snapshot](./_img/Screenshot%202567-09-20%20at%2013.22.07.png)
 
 ## Current setup
 
@@ -13,8 +13,6 @@
 - `oh-my-zsh`: a framework for `zsh`
 - `oh-my-posh`: prompt theme on top of `zsh`
 - `tmux`: terminal multiplexer for workspaces
-- `sketchybar`:  a highly flexible, customizable, fast and powerful status bar replacement
-- `amethyst`: a tiling window manager for macos
 
 ## [Alacritty](https://alacritty.org)
 
@@ -23,6 +21,9 @@
   1. execute `sudo spctl --master-disable`
   1. launch Alacritty again
   1. execute `sudo spctl --master-enable`
+
+> [!NOTE]
+> unused this. prefer `kitty` instead.
 
 [credit](https://blog.chaitanyashahare.com/posts/11-how-to-install-alacritty-on-macos-ventura/)
 
@@ -57,6 +58,9 @@
 - install via homebrew
 - use makefile
 - hide menubar in "setting > control center"
+
+> [!NOTE]
+> pending for fix after updating MacOS Sequioa.
 
 ## [oh-my-zsh](https://ohmyz.sh)
 
@@ -95,6 +99,9 @@
 ## [amethyst](https://github.com/ianyh/Amethyst)
 
 - install via homebrew
+
+> [!NOTE]
+> unused. Prefer Window tiling from MacOS Sequioa.
 
 ## [makefile](https://makefiletutorial.com/)
 
