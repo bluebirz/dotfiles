@@ -10,4 +10,8 @@ data
 # nvim
 lazy-lock.json
 
+# lock file
+*.lock.json
+
+# misc
 .DS_Store

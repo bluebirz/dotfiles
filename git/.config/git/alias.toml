@@ -5,6 +5,7 @@
   mrg = "!f() { git merge $1 -m \"$2\" --no-ff  && git push; }; f"
   ckb = "!f() { git checkout -b $@ && git push --set-upstream origin $@; }; f"
   brm = "!f() { git push origin -d \"$1\" && git branch -d \"$1\"; }; f"
+  ign = "!f() { git rm -r --cached . && git add . ; }; f"
 
   lob = log --all --graph --abbrev-commit --decorate --date=format-local:'%Y-%m-%d %H:%M:%S' --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%ad%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
   dff = diff -u

@@ -3,11 +3,11 @@
 	# git config --get-regexp '^alias\.' > git/alias.txt
 	# cp $$HOME/.gitconfig ./
 
-brew-install:
-	cat brew/brew-$(type).txt | xargs brew install
+brew-init:
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew-uninstall:
-	cat brew/brew-$(type).txt | xargs brew uninstall
+brew-install:
+	brew bundle --file=brew/brew-$(type) --all
 
 zsh:
 	if test -f $$HOME/.zshrc ; then 
@@ -19,8 +19,6 @@ zsh:
 	$$SHELL --version
 
 sketchybar-init:
-	brew tap FelixKratz/formulae
-	brew install sketchybar
 	brew services start sketchybar
 	echo "defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 24"
 	# cr: https://www.josean.com/posts/sketchybar-setup
@@ -28,7 +26,8 @@ sketchybar-init:
 sketchybar-restart:
 	brew services restart sketchybar
 
-# devbox-init:
+devbox-init:
+	curl -fsSL https://get.jetify.com/devbox | bash
 
 ohmyzsh:
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
