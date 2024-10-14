@@ -11,7 +11,7 @@ return {
       separator_style = "thin",
       show_close_icon = false,
       show_buffer_close_icons = false,
-      color_icons = false,
+      color_icons = true,
       indicator = {
         style = "underline",
       },

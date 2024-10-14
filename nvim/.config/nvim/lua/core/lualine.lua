@@ -5,7 +5,8 @@ return {
     opts = function(_, opts)
       opts.options = {
         -- theme = "codedark",
-        theme = "nord",
+        -- theme = "nord",
+        theme = "catppuccin",
         -- component_separators = { left = '', right = ''},
         -- section_separators = { left = '', right = ''},
         component_separators = { left = "", right = "" },

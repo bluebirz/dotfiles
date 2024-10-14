@@ -16,3 +16,4 @@
   wta = worktree add
   wtl = worktree list
   wtr = worktree remove
+  als = config --get-regexp alias
