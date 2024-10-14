@@ -25,7 +25,7 @@ return {
             color_dirty = function()
               return "ErrorMsg"
             end,
-            color_untracked = { fg = "#b16286", bg = "Black" },
+            color_untracked = { fg = "#b16286" }, -- bg = "Black" },
             color_no_upstream = { fg = "#c7c7c7" },
             color_merging = { fg = 4 },
           },
