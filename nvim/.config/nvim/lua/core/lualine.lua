@@ -14,7 +14,22 @@ return {
       }
       opts.sections.lualine_a = { "mode" }
       opts.sections.lualine_b = {
-        "git_prompt_string",
+        {
+          "git_prompt_string",
+          trim_prompt_prefix = false,
+          prompt_config = {
+            prompt_prefix = nil,
+            prompt_suffix = nil,
+            color_clean = { fg = "LightGreen" },
+            color_delta = "WarningMsg",
+            color_dirty = function()
+              return "ErrorMsg"
+            end,
+            color_untracked = { fg = "#b16286", bg = "Black" },
+            color_no_upstream = { fg = "#c7c7c7" },
+            color_merging = { fg = 4 },
+          },
+        },
         {
           "diff",
           colored = true, -- Displays a colored diff status if set to true
