@@ -1,9 +1,17 @@
-#:schema https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
-# https://www.youtube.com/watch?v=9U8LCjuQzdc
-
-version = 2
-final_space = true
 console_title_template = '{{ .Shell }} in {{ .Folder }}'
+version = 3
+final_space = true
+
+[secondary_prompt]
+  template = ' '
+  foreground = '#2780e6'
+  background = 'transparent'
+
+[transient_prompt]
+  template = ' '
+  foreground = ''
+  background = 'transparent'
+  foreground_templates = ['{{if gt .Code 0}}#e68d27{{end}}', '{{if eq .Code 0}}#2780e6{{end}}']
 
 [[blocks]]
   type = 'prompt'
@@ -11,55 +19,39 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
   newline = true
 
   [[blocks.segments]]
-    type = 'path'
     style = 'plain'
-    background = 'transparent'
-    foreground = 'blue'
     template = '{{ .Path }} '
+    foreground = 'blue'
+    background = 'transparent'
+    type = 'path'
 
     [blocks.segments.properties]
       style = 'full'
 
   [[blocks.segments]]
-    type = 'git'
     style = 'plain'
+    template = '{{ .UpstreamIcon }} {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} 󱊕 {{ .StashCount }}{{ end }}'
     foreground = 'p:grey'
     background = 'transparent'
-    # template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}</>'
-    template = "{{ .UpstreamIcon }} {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} 󱊕 {{ .StashCount }}{{ end }}"
+    type = 'git'
 
     [blocks.segments.properties]
       branch_icon = ''
       commit_icon = '@'
       fetch_status = true
       fetch_upstream_icon = true
-      source = "cli"
-
-  # [[blocks.segments]]
-  #   type = 'gcp'
-  #   style = 'plain'
-  #   foreground = 'transparent'
-  #   background = '#5184F3'
-  #   template = ' 󱇶 {{.Project}} '
-  #
-  # [[blocks.segments]]
-  #   type = 'aws'
-  #   style = 'plain'
-  #   foreground = 'transparent'
-  #   background = '#F58534'
-  #   template = '   {{.Profile}}{{if .Region}}@{{.Region}}{{end}} '
-
+      source = 'cli'
 
 [[blocks]]
   type = 'rprompt'
   overflow = 'hidden'
 
   [[blocks.segments]]
-    type = 'executiontime'
     style = 'plain'
+    template = '{{ .FormattedMs }}'
     foreground = 'yellow'
     background = 'transparent'
-    template = '{{ .FormattedMs }}'
+    type = 'executiontime'
 
     [blocks.segments.properties]
       threshold = 5000
@@ -69,65 +61,40 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
   alignment = 'left'
   newline = true
 
-# Programming languages version prompt
-  [[blocks.segments]]  
-    type = "python"
-    foreground = "#FFE873"
-    background = "transparent"
-    template = "  {{ .Venv }} {{ .Full }} "
-    # template = " py {{ .Venv }} {{ .Full }} "
-
   [[blocks.segments]]
-    type = "node"
-    foreground = "#539E43"
-    background = "transparent"
-    template = "  {{ .Full }} "
-    # template = " node {{ .Full }} "
-
-  [[blocks.segments]]
-    type = "go"
-    foreground = "#79D4FD"
-    background = "transparent"
-    template = "  {{ .Full }} "
-    # template = " go {{ .Full }} "
-
-  [[blocks.segments]]
-    type = "terraform"
-    foreground = "#5C4EE6"
-    background = "transparent"
-    template = " 󱁢 {{.WorkspaceName}} "
-    # template = " tf {{.WorkspaceName}} "
-
-  [[blocks.segments]]
-    type = "rust"
-    foreground = "#F66601"
-    background = "transparent"
-    template = "  {{ .Full }} "
-    # template = " rs {{ .Full }} "
-# end of programming languages version prompt
-
-  [[blocks.segments]]
-    type = 'text'
-    style = 'plain'
-    foreground_templates = [
-      "{{if gt .Code 0}}#e68d27{{end}}",
-      "{{if eq .Code 0}}#2780e6{{end}}",
-    ]
+    template = '  {{ .Venv }} {{ .Full }} '
+    foreground = '#FFE873'
     background = 'transparent'
-    # template = '󱗆 ❯'
-    template = ""
+    type = 'python'
 
-[transient_prompt]
-  foreground_templates = [
-    "{{if gt .Code 0}}#e68d27{{end}}",
-    "{{if eq .Code 0}}#2780e6{{end}}",
-  ]
-  background = 'transparent'
-  # template = '󱗆 ❯ '
-  template = " "
+  [[blocks.segments]]
+    template = '  {{ .Full }} '
+    foreground = '#539E43'
+    background = 'transparent'
+    type = 'node'
 
-[secondary_prompt]
-  foreground = '#2780e6'
-  background = 'transparent'
-  # template = '󱗆 ❯❯ '
-  template = " "
+  [[blocks.segments]]
+    template = '  {{ .Full }} '
+    foreground = '#79D4FD'
+    background = 'transparent'
+    type = 'go'
+
+  [[blocks.segments]]
+    template = ' 󱁢 {{.WorkspaceName}} '
+    foreground = '#5C4EE6'
+    background = 'transparent'
+    type = 'terraform'
+
+  [[blocks.segments]]
+    template = '  {{ .Full }} '
+    foreground = '#F66601'
+    background = 'transparent'
+    type = 'rust'
+
+  [[blocks.segments]]
+    style = 'plain'
+    template = ''
+    foreground = ''
+    background = 'transparent'
+    type = 'text'
+    foreground_templates = ['{{if gt .Code 0}}#e68d27{{end}}', '{{if eq .Code 0}}#2780e6{{end}}']
