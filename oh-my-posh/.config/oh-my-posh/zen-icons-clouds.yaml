@@ -1,0 +1,96 @@
+version: 2
+final_space: true
+console_title_template: "{{ .Shell }} in {{ .Folder }}"
+blocks:
+  - type: prompt
+    alignment: left
+    newline: true
+    segments:
+      - type: path
+        style: plain
+        background: transparent
+        foreground: blue
+        template: "{{ .Path }} "
+        properties:
+          style: full
+      - type: git
+        style: plain
+        foreground: p:grey
+        background: transparent
+        template:
+          "{{ .UpstreamIcon }} {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus
+          }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end
+          }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if
+          .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt
+          .StashCount 0 }} 󱊕 {{ .StashCount }}{{ end }}"
+        properties:
+          branch_icon: ""
+          commit_icon: "@"
+          fetch_status: true
+      - type: gcp
+        style: plain
+        foreground: transparent
+        background: "#5184F3"
+        template: " 󱇶 {{.Project}} "
+      - type: aws
+        style: plain
+        foreground: transparent
+        background: "#F58534"
+        template: "   {{.Profile}}{{if .Region}}@{{.Region}}{{end}} "
+  - type: rprompt
+    overflow: hidden
+    segments:
+      - type: executiontime
+        style: plain
+        foreground: yellow
+        background: transparent
+        template: "{{ .FormattedMs }}"
+        properties:
+          threshold: 5000
+  - type: prompt
+    alignment: left
+    newline: true
+    segments:
+      - type: python
+        foreground: "#FFE873"
+        background: transparent
+        template: "  {{ .Venv }} {{ .Full }} "
+      - type: node
+        foreground: "#539E43"
+        background: transparent
+        template: "  {{ .Full }} "
+      - type: go
+        foreground: "#79D4FD"
+        background: transparent
+        template: "  {{ .Full }} "
+      - type: terraform
+        foreground: "#5C4EE6"
+        background: transparent
+        template: " 󱁢 {{.WorkspaceName}} "
+      - type: rust
+        foreground: "#F66601"
+        background: transparent
+        template: "  {{ .Full }} "
+      - type: ruby
+        foreground: "#ed1405"
+        background: transparent
+        template: "  {{ .Full }} "
+      - type: text
+        style: plain
+        foreground_templates:
+          - "{{if gt .Code 0}}#e68d27{{end}}"
+          - "{{if eq .Code 0}}#2780e6{{end}}"
+        background: transparent
+        template: 
+
+transient_prompt:
+  foreground_templates:
+    - "{{if gt .Code 0}}#e68d27{{end}}"
+    - "{{if eq .Code 0}}#2780e6{{end}}"
+  background: transparent
+  template: " "
+
+secondary_prompt:
+  foreground: "#2780e6"
+  background: transparent
+  template: " "

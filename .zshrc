@@ -164,9 +164,10 @@ export PATH="$PATH:/Users/bluebirz/.local/bin"
 
 source ~/.zsh/alias.sh
 source ~/.zsh/addons.sh
+source ~/.zsh/direnv-devbox.sh
 
 # Enable oh-my-posh
-eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen-icons.toml)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen-icons.yaml)"
 
 # run fastfetch
 fastfetch
