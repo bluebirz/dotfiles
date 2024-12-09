@@ -1,10 +1,4 @@
 # vim:fileencoding=utf-8:foldmethod=marker
-font_family      Hasklug Nerd Font
-bold_font        auto
-italic_font      auto
-bold_italic_font auto
-
-font_size 13.0
 
 # disable_ligatures never
 
@@ -26,7 +20,7 @@ window_margin_width 5
 # hide_window_decorations no
 hide_window_decorations titlebar-only
 tab_bar_align center
-background_opacity 0.90
+background_opacity 0.97
 # background_blur 0
 
 # shell_integration enabled
@@ -36,10 +30,18 @@ shell_integration no-cursor
 # map ctrl+shift+s send_text all \x1b[83;5u
 
 # BEGIN_KITTY_THEME
-# include theme-tokyo-night-storm.conf
-# include theme-nord.conf
-# include theme-catppucin-macchiato.conf
-include theme-catppucin-frappe.conf
+# include ./theme-tokyo-night-storm.conf
+# include ./theme-nord.conf
+include ./theme-catppucin-macchiato.conf
+# include ./theme-catppucin-frappe.conf
 # END_KITTY_THEME
 
 
+font_size 14.0
+
+# BEGIN_KITTY_FONTS
+font_family      family="SauceCodePro Nerd Font"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
