@@ -2,7 +2,7 @@
 
 ## snapshot @ 2024-12-31
 
-![snapshot](./_img/Screenshot 2567-12-31 at 4.18.45 PM.png)
+![snapshot](./_img/Screenshot%202567-12-31%20at%204.18.45 PM.png)
 
 ## Current setup
 
@@ -23,7 +23,7 @@
   1. execute `sudo spctl --master-enable`
 
 > [!NOTE]
-> unused this. prefer `kitty` instead.
+> unused this. prefer `ghostty` instead.
 
 [credit](https://blog.chaitanyashahare.com/posts/11-how-to-install-alacritty-on-macos-ventura/)
 
@@ -44,6 +44,7 @@
   make brew-install type=[personal|work]
   make brew-uninstall type=[personal|work]
   ```
+
 ## ghostty
 
 - install via homebrew
@@ -51,6 +52,9 @@
 ## [kitty](https://sw.kovidgoyal.net/kitty/)
 
 - install via homebrew
+
+> [!NOTE]
+> unused tthis. prefer `ghostty` instead.
 
 ## [nvim](https://neovim.io) (with [lazyvim](https://www.lazyvim.org))
 
