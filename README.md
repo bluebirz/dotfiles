@@ -1,13 +1,13 @@
 # Dotfiles
 
-## snapshot @ 2024-09-20
+## snapshot @ 2024-12-31
 
-![snapshot](./_img/Screenshot%202567-09-20%20at%2013.22.07.png)
+![snapshot](./_img/Screenshot 2567-12-31 at 4.18.45 PM.png)
 
 ## Current setup
 
 - `brew`: package manager
-- `kitty`: terminal emulator
+- `ghostty`: terminal emulator
 - `nvim`: text editor
 - `zsh`: a unix shell
 - `oh-my-zsh`: a framework for `zsh`
@@ -44,6 +44,9 @@
   make brew-install type=[personal|work]
   make brew-uninstall type=[personal|work]
   ```
+## ghostty
+
+- install via homebrew
 
 ## [kitty](https://sw.kovidgoyal.net/kitty/)
 

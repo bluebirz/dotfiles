@@ -17,3 +17,5 @@
   wtl = worktree list
   wtr = worktree remove
   als = config --get-regexp alias
+  pullr = pull --rebase
+  undo = rebase --abort

@@ -1,0 +1,15 @@
+font-family = "Mononoki Nerd Font"
+font-size = 13.5
+adjust-underline-position = +3
+adjust-cell-height = 15%
+adjust-cell-width = -4%
+
+macos-titlebar-style = hidden
+window-padding-x = 5,5
+window-padding-y = 5,5
+
+shell-integration-features = no-cursor
+cursor-style = underline
+
+background-opacity = 0.97
+theme = "catppuccin-macchiato.conf"
