@@ -17,4 +17,4 @@ vim.opt.listchars = {
 vim.opt.showbreak = "↪ "
 vim.g.root_spec = { "cwd" }
 vim.opt.guicursor =
-  "a:hor50,i-ci:ver50-blinkoff100-blinkon100,r:hor50-blinkoff100-blinkon100,v-ve:block-blinkoff100-blinkon100"
+  "a:ver50,i-ci:ver50-blinkoff100-blinkon100,r:block50-blinkoff50-blinkon50,v-ve:block-blinkoff100-blinkon100"
