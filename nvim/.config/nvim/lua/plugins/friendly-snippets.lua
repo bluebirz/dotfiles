@@ -1,3 +1,3 @@
 return {
-  { "rafamadriz/friendly-snippets", event = "VeryLazy" },
+  { "rafamadriz/friendly-snippets", event = "VeryLazy", opt = {} },
 }

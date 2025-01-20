@@ -17,19 +17,30 @@ augroup END
 
 -- dim inactive windows
 vim.cmd([[
-hi def Dim cterm=none ctermbg=none ctermfg=242
+  hi def Dim cterm=none ctermbg=none ctermfg=242
 
-function! s:DimInactiveWindow()
-    syntax region Dim start='' end='$$$end$$$'
-endfunction
+  function! s:DimInactiveWindow()
+      syntax region Dim start='' end='$$$end$$$'
+  endfunction
 
-function! s:UndimActiveWindow()
-    ownsyntax
-endfunction
+  function! s:UndimActiveWindow()
+      ownsyntax
+  endfunction
 
-autocmd WinEnter * call s:UndimActiveWindow()
-autocmd BufEnter * call s:UndimActiveWindow()
-autocmd WinLeave * call s:DimInactiveWindow()
+  autocmd WinEnter * call s:UndimActiveWindow()
+  autocmd BufEnter * call s:UndimActiveWindow()
+  autocmd WinLeave * call s:DimInactiveWindow()
 ]])
 
+vim.cmd([[
+  set cursorline
+  hi cursorline cterm=none term=none
+  autocmd WinEnter * setlocal cursorline
+  autocmd WinLeave * setlocal nocursorline
+  highlight CursorLine guibg=#303000 ctermbg=234
+]])
 -- vim.cmd([[highlight Visual cterm=bold ctermbg=none ctermfg=none]])
+
+-- vim.cmd([[
+--   vim.api.nvim_set_hl(0, 'NeoTreeCursorLine', { bg = '#RRGGBB' })
+-- ]])

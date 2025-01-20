@@ -12,7 +12,8 @@
   cko = checkout
   stt = status -u
   baa = branch -a
-  rsh = reset --soft HEAD^
+  rss = reset --soft HEAD^
+  rsh = reset --hard HEAD^
   wta = worktree add
   wtl = worktree list
   wtr = worktree remove
