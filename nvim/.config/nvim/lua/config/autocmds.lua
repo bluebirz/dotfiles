@@ -41,6 +41,12 @@ vim.cmd([[
 ]])
 -- vim.cmd([[highlight Visual cterm=bold ctermbg=none ctermfg=none]])
 
+-- See ":help neo-tree-highlights" for a list of available highlight groups
+vim.cmd([[
+  hi NeoTreeCursorLine guibg=#000435
+]])
+-- vim.api.nvim_set_hl(0, "NeoTreeCursorLine", { bg = "#RRGGBB" })
+-- change cursor line
 -- vim.cmd([[
---   vim.api.nvim_set_hl(0, 'NeoTreeCursorLine', { bg = '#RRGGBB' })
+--   highlight CursorLine cterm=NONE ctermbg=DarkGray guibg=#3c3c3c
 -- ]])
