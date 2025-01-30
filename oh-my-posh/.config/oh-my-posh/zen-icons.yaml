@@ -15,7 +15,7 @@ blocks:
           style: full
       - style: plain
         template:
-          "{{ .UpstreamIcon }} {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus
+          "{{ .UpstreamIcon }}  {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus
           }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end
           }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if
           .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt
