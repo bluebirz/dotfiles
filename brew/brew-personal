@@ -60,7 +60,7 @@ brew "zsh"
 
 cask "alt-tab"
 cask "calibre"
-cask "font-mononoki-nerd-font"
+cask "font-code-new-roman-nerd-font"
 cask "google-cloud-sdk"
 cask "ghostty"
 cask "numi"

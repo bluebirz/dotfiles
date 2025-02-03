@@ -1,8 +1,8 @@
-font-family = "Mononoki Nerd Font"
-font-size = 13.5
+font-family = "CodeNewRoman Nerd Font"
+font-size = 14
 adjust-underline-position = +3
 adjust-cell-height = 15%
-adjust-cell-width = -4%
+adjust-cell-width = 0%
 
 macos-titlebar-style = hidden
 window-padding-x = 5,5

@@ -2,7 +2,7 @@
 
 ## snapshot @ 2025-02-03
 
-![snapshot](./_img/Screenshot%202568-02-03%20at%209.48.59%E2%80%AFAM.png)
+<img src="./_img/Screenshot 2568-02-03 at 10.24.53 AM.png" title="snapshot">
 
 ## Current setup
 
