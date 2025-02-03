@@ -23,7 +23,7 @@
   1. execute `sudo spctl --master-enable`
 
 > [!NOTE]
-> unused this. prefer `ghostty` instead.
+> Prefer `ghostty` instead.
 
 [credit](https://blog.chaitanyashahare.com/posts/11-how-to-install-alacritty-on-macos-ventura/)
 
@@ -54,7 +54,7 @@
 - install via homebrew
 
 > [!NOTE]
-> unused tthis. prefer `ghostty` instead.
+> Prefer `ghostty` instead.
 
 ## [nvim](https://neovim.io) (with [lazyvim](https://www.lazyvim.org))
 
@@ -108,7 +108,7 @@
 - install via homebrew
 
 > [!NOTE]
-> unused. Prefer Window tiling from MacOS Sequioa.
+> Prefer Window tiling from MacOS Sequioa.
 
 ## [makefile](https://makefiletutorial.com/)
 
