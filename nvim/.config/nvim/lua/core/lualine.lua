@@ -1,6 +1,7 @@
 local colors = {
   aqua = "#7AB0DF",
   bg = "#1C212A",
+  black = "#000000",
   blue = "#5FB0FC",
   cyan = "#70C0BA",
   darkred = "#FB7373",
@@ -14,6 +15,29 @@ local colors = {
   red = "#F87070",
   white = "#FFFFFF",
   yellow = "#FFE59E",
+}
+
+local mode_color = {
+  [""] = colors.orange,
+  [""] = colors.blue,
+  ["!"] = colors.red,
+  ["R"] = colors.purple,
+  ["Rv"] = colors.purple,
+  ["S"] = colors.orange,
+  ["V"] = colors.blue,
+  ["c"] = colors.purple,
+  ["ce"] = colors.red,
+  ["cv"] = colors.red,
+  ["i"] = colors.red,
+  ["ic"] = colors.yellow,
+  ["n"] = colors.green,
+  ["no"] = colors.red,
+  ["r"] = colors.cyan,
+  ["r?"] = colors.cyan,
+  ["rm"] = colors.cyan,
+  ["s"] = colors.orange,
+  ["t"] = colors.white,
+  ["v"] = colors.blue,
 }
 
 return {
@@ -51,29 +75,7 @@ return {
         {
           "mode",
           color = function()
-            local mode_color = {
-              [""] = colors.orange,
-              [""] = colors.blue,
-              ["!"] = colors.red,
-              ["R"] = colors.purple,
-              ["Rv"] = colors.purple,
-              ["S"] = colors.orange,
-              ["V"] = colors.blue,
-              ["c"] = colors.purple,
-              ["ce"] = colors.red,
-              ["cv"] = colors.red,
-              ["i"] = colors.red,
-              ["ic"] = colors.yellow,
-              ["n"] = colors.green,
-              ["no"] = colors.red,
-              ["r"] = colors.cyan,
-              ["r?"] = colors.cyan,
-              ["rm"] = colors.cyan,
-              ["s"] = colors.orange,
-              ["t"] = colors.white,
-              ["v"] = colors.blue,
-            }
-            return { fg = mode_color[vim.fn.mode()], bg = colors.bg, gui = "bold" }
+            return { bg = mode_color[vim.fn.mode()], fg = colors.black, gui = "bold" }
           end,
           -- fmt = function(s)
           --   return s:lower()
@@ -145,13 +147,23 @@ return {
       }
       -- opts.sections.lualine_x = { "encoding", "fileformat", "filetype" }
       opts.sections.lualine_y = {
-        "progress",
-        "location",
         {
           "filetype",
           colored = true, -- Displays filetype icon in color if set to true
           icon_only = false, -- Display only an icon for filetype
           icon = { align = "left" }, -- Display filetype icon on the xxx hand side
+        },
+        {
+          "progress",
+          color = function()
+            return { bg = mode_color[vim.fn.mode()], fg = colors.black }
+          end,
+        },
+        {
+          "location",
+          color = function()
+            return { bg = mode_color[vim.fn.mode()], fg = colors.black }
+          end,
         },
       }
       opts.sections.lualine_z = {}
