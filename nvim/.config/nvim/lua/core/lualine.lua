@@ -135,6 +135,22 @@ return {
       }
       opts.sections.lualine_c = {
         {
+          function()
+            local unsave = 0
+            for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+              if vim.api.nvim_get_option_value("modified", { buf = buf }) then
+                unsave = unsave + 1
+              end
+            end
+            if unsave > 0 then
+              return "󰽃 " .. unsave
+            else
+              return ""
+            end
+          end,
+          color = { bg = colors.red, fg = colors.black },
+        },
+        {
           "filename",
           path = 1,
           symbols = {
