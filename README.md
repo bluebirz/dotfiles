@@ -1,8 +1,8 @@
 # Dotfiles
 
-## snapshot @ 2024-12-31
+## snapshot @ 2025-02-03
 
-![snapshot](./_img/Screenshot%202567-12-31%20at%204.18.45 PM.png)
+![snapshot](./_img/Screenshot%202568-02-03%20at%209.48.59 AM.png)
 
 ## Current setup
 
@@ -45,7 +45,7 @@
   make brew-uninstall type=[personal|work]
   ```
 
-## ghostty
+## [ghostty](https://ghostty.org/)
 
 - install via homebrew
 
