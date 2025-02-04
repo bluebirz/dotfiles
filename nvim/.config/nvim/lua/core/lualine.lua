@@ -8,6 +8,7 @@ local colors = {
   fg = "#C7C7CA",
   gray = "#222730",
   green = "#79DCAA",
+  lightgray = "#454C5C",
   lime = "#54CED6",
   orange = "#FFD064",
   pink = "#D997C8",
@@ -49,25 +50,6 @@ return {
         -- theme = "codedark",
         theme = "nord",
         -- theme = "catppuccin",
-        -- theme = {
-        --   normal = {
-        --     a = { fg = colors.black, bg = colors.violet },
-        --     b = { fg = colors.white, bg = colors.grey },
-        --     c = { fg = colors.white },
-        --   },
-        --
-        --   insert = { a = { fg = colors.black, bg = colors.blue } },
-        --   visual = { a = { fg = colors.black, bg = colors.cyan } },
-        --   replace = { a = { fg = colors.black, bg = colors.red } },
-        --
-        --   inactive = {
-        --     a = { fg = colors.white, bg = colors.black },
-        --     b = { fg = colors.white, bg = colors.black },
-        --     c = { fg = colors.white },
-        --   },
-        -- },
-        -- component_separators = { left = '', right = ''},
-        -- section_separators = { left = '', right = ''},
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       }
@@ -77,9 +59,6 @@ return {
           color = function()
             return { bg = mode_color[vim.fn.mode()], fg = colors.black, gui = "bold" }
           end,
-          -- fmt = function(s)
-          --   return s:lower()
-          -- end,
         },
       }
       opts.sections.lualine_b = {
@@ -87,16 +66,19 @@ return {
           "git_prompt_string",
           trim_prompt_prefix = false,
           prompt_config = {
-            -- prompt_prefix = nil,
-            -- prompt_suffix = nil,
-            -- color_clean = { fg = "LightGreen" },
-            -- color_delta = "WarningMsg",
-            -- color_dirty = function()
-            --   return "ErrorMsg"
-            -- end,
-            -- color_untracked = { fg = "#b16286" }, -- bg = "Black" },
-            -- color_no_upstream = { fg = "#c7c7c7" },
-            -- color_merging = { fg = 4 },
+            prompt_prefix = nil,
+            prompt_suffix = nil,
+            ahead_format = "↑[%v]",
+            behind_format = "↓[%v]",
+            diverged_format = "↕ ↑[%v] ↓[%v]",
+            no_upstream_remote_format = " → %v/%v",
+            color_disabled = false,
+            color_clean = { fg = colors.green, bg = colors.lightgray },
+            color_delta = { fg = colors.yellow, bg = colors.lightgray },
+            color_dirty = { fg = colors.red, bg = colors.lightgray },
+            color_untracked = { fg = colors.pink, bg = colors.lightgray },
+            color_no_upstream = { fg = colors.gray, bg = colors.lightgray },
+            color_merging = { fg = colors.blue, bg = colors.lightgray },
           },
         },
         {
