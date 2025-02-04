@@ -8,18 +8,21 @@ blocks:
     segments:
       - style: plain
         template: "{{ .Path }} "
-        foreground: blue
+        foreground: "white"
         background: transparent
         type: path
         properties:
           style: full
+          folder_separator_icon: " "
+          home_icon: " "
+          cycle: ["#5295e3", "#e8a456"]
       - style: plain
         template:
           "{{ .UpstreamIcon }}  {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus
           }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end
           }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if
           .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt
-          .StashCount 0 }} 󱊕 {{ .StashCount }}{{ end }}"
+          .StashCount 0 }} 󱊕 {{ .StashCount }}{{ end }} "
         foreground: p:grey
         background: transparent
         type: git

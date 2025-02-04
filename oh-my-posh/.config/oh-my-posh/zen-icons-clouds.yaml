@@ -1,4 +1,4 @@
-version: 2
+version: 3
 final_space: true
 console_title_template: "{{ .Shell }} in {{ .Folder }}"
 blocks:
@@ -6,27 +6,32 @@ blocks:
     alignment: left
     newline: true
     segments:
-      - type: path
-        style: plain
-        background: transparent
-        foreground: blue
+      - style: plain
         template: "{{ .Path }} "
+        foreground: "white"
+        background: transparent
+        type: path
         properties:
           style: full
-      - type: git
-        style: plain
-        foreground: p:grey
-        background: transparent
+          folder_separator_icon: " "
+          home_icon: " "
+          cycle: ["#5295e3", "#e8a456"]
+      - style: plain
         template:
           "{{ .UpstreamIcon }}  {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus
           }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end
           }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if
           .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt
-          .StashCount 0 }} 󱊕 {{ .StashCount }}{{ end }}"
+          .StashCount 0 }} 󱊕 {{ .StashCount }}{{ end }} "
+        foreground: p:grey
+        background: transparent
+        type: git
         properties:
           branch_icon: ""
           commit_icon: "@"
           fetch_status: true
+          fetch_upstream_icon: true
+          source: cli
       - type: gcp
         style: plain
         foreground: transparent
@@ -40,11 +45,11 @@ blocks:
   - type: rprompt
     overflow: hidden
     segments:
-      - type: executiontime
-        style: plain
+      - style: plain
+        template: "{{ .FormattedMs }}"
         foreground: yellow
         background: transparent
-        template: "{{ .FormattedMs }}"
+        type: executiontime
         properties:
           threshold: 5000
   - type: prompt
@@ -84,13 +89,14 @@ blocks:
         template: 
 
 transient_prompt:
+  template: " "
+  foreground: ""
+  background: transparent
   foreground_templates:
     - "{{if gt .Code 0}}#e68d27{{end}}"
     - "{{if eq .Code 0}}#2780e6{{end}}"
-  background: transparent
-  template: " "
 
 secondary_prompt:
+  template: " "
   foreground: "#2780e6"
   background: transparent
-  template: " "
