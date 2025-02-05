@@ -8,14 +8,14 @@ blocks:
     segments:
       - style: plain
         template: "{{ .Path }} "
-        foreground: "white"
+        foreground: "#e68d27"
         background: transparent
         type: path
         properties:
           style: full
           folder_separator_icon: " "
           home_icon: " "
-          cycle: ["#5295e3", "#e8a456"]
+          cycle: ["white", "lightCyan"]
       - style: plain
         template:
           "{{ .UpstreamIcon }}  {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus
