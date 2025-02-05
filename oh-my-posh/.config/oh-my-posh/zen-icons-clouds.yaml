@@ -14,8 +14,8 @@ blocks:
         properties:
           style: full
           folder_separator_icon: "  "
-          home_icon: " "
-          cycle: ["lightGreen", "lightCyan"]
+          home_icon: ""
+          cycle: ["#87b3e6", "#e5b987", "#b3e587"]
       - style: plain
         template:
           "{{ .UpstreamIcon }}  {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus
