@@ -21,6 +21,10 @@ return {
     -- Smear cursor in insert mode.
     -- See also `vertical_bar_cursor_insert_mode` and `distance_stop_animating_vertical_bar`.
     smear_insert_mode = true,
+    -- List of filetypes where the plugin is disabled.
+    filetypes_disabled = {},
+    -- Stop animating when the smear's tail is within this distance (in characters) from the target.
+    distance_stop_animating = 3,
     -- Smear cursor color. Defaults to Cursor GUI color if not set.
     -- Set to "none" to match the text color at the target cursor position.
     cursor_color = "none",
