@@ -1,5 +1,6 @@
 return {
   "neo-tree.nvim",
+  enabled = false,
   opts = {
     default_component_configs = {
       icon = {
@@ -49,6 +50,7 @@ return {
       position = "float",
     },
     filesystem = {
+      hijack_netrw_behavior = "disabled",
       filtered_items = {
         visible = true,
         show_hidden_count = true,
@@ -68,7 +70,7 @@ return {
     },
     buffers = { follow_current_file = { enable = true } },
   },
-  keys = {
-    { "<leader>e", "<cmd>Neotree reveal<CR>" },
-  },
+  -- keys = {
+  --   { "<leader>e", "<cmd>Neotree reveal<CR>" },
+  -- },
 }
