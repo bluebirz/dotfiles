@@ -1,5 +1,5 @@
 return {
   "echasnovski/mini.animate",
   version = false,
-  opts = function() end,
+  opts = { cursor = { enable = false } },
 }
