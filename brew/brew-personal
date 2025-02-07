@@ -6,6 +6,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "jandedobbeleer/oh-my-posh"
 tap "mikesmithgh/git-prompt-string"
+tap "jesseduffield/lazygit"
 
 brew "atuin"
 brew "awscli"
