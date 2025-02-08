@@ -4,7 +4,7 @@ THEME.git.modified = ui.Style():fg("yellow"):bold()
 THEME.git.deleted = ui.Style():fg("red"):bold()
 -- THEME.git.untracked
 -- THEME.git.ignored
--- THEME.git.added
+THEME.git.added = ui.Style():fg("green"):bold()
 -- THEME.git.updated
 THEME.git.modified_sign = "M"
 THEME.git.deleted_sign = "D"

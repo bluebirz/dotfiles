@@ -48,8 +48,10 @@ return {
     opts = function(_, opts)
       opts.options = {
         -- theme = "codedark",
-        theme = "nord",
+        -- theme = "nord",
         -- theme = "catppuccin",
+        theme = "nordic",
+        -- theme = "onedark",
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       }

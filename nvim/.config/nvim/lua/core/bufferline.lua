@@ -20,6 +20,9 @@ return {
       -- highlights = require("nord.plugins.bufferline").akinsho(),
     },
     highlights = {
+      -- buffer_visible = {
+      --   fg = "#000000",
+      -- },
       buffer_selected = {
         fg = "#e68d27",
         -- bg = "#2780e6",

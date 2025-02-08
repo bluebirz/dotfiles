@@ -12,4 +12,4 @@ shell-integration-features = no-cursor
 cursor-style = underline
 
 background-opacity = 0.97
-theme = "nord.conf"
+theme = "nordic.conf"

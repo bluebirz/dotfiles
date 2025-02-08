@@ -3,6 +3,8 @@ return {
   opts = {
     -- colorscheme = "catppuccin",
     -- colorscheme = "tokyonight-storm",
-    colorscheme = "nord",
+    -- colorscheme = "nord",
+    colorscheme = "nordic",
+    -- colorscheme = "onedark",
   },
 }
