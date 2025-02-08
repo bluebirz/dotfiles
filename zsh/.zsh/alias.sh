@@ -16,9 +16,9 @@ upd() (
 alias nv="nvim ." # nvim
 alias yz="yazi ." # yazi
 alias zl="zellij"
-alias gg="lazygit"
 # alias prep_py="python3 -m venv venv && echo \"source venv/bin/activate\nlayout python\" > .envrc && direnv allow"
 alias dus="du -h -d 1 | sort -h"
 alias lsh="ls -lah | sort -h"
 alias dvb="devbox"
 alias tmx="tmux attach"
+alias lgg="lazygit"

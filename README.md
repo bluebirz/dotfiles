@@ -27,15 +27,13 @@
 
 [credit](https://blog.chaitanyashahare.com/posts/11-how-to-install-alacritty-on-macos-ventura/)
 
-## git
+## [amethyst](https://github.com/ianyh/Amethyst)
 
-- include `alias.toml` by adding this into `.gitconfig`
+- install via homebrew
 
-  ```toml
-  [include]
-    path = ~/.config/git/alias.toml
-  ```
-
+> [!NOTE]
+> Prefer Window tiling from MacOS Sequioa.
+>
 ## [brew](https://brew.sh)
 
 - install/uninstall homebrew packages, referring `brew/brew-*.txt`:
@@ -49,12 +47,26 @@
 
 - install via homebrew
 
+## git
+
+- include `alias.toml` by adding this into `.gitconfig`
+
+  ```toml
+  [include]
+    path = ~/.config/git/alias.toml
+  ```
+
 ## [kitty](https://sw.kovidgoyal.net/kitty/)
 
 - install via homebrew
 
 > [!NOTE]
 > Prefer `ghostty` instead.
+
+## [lazygit](https://github.com/jesseduffield/lazygit)
+
+- install via homebrew
+- also install nvim plugin of this.
 
 ## [nvim](https://neovim.io) (with [lazyvim](https://www.lazyvim.org))
 
@@ -67,7 +79,7 @@
 - hide menubar in "setting > control center"
 
 > [!NOTE]
-> pending for fix after updating MacOS Sequioa.
+> not in-used, pending for fix after updating MacOS Sequioa.
 
 ## [oh-my-zsh](https://ohmyz.sh)
 
@@ -75,6 +87,7 @@
 
 ## [oh-my-posh](https://ohmyposh.dev/)
 
+-
 - install via homebrew
 - update prompt at <https://ohmyposh.dev/docs/installation/prompt>
 
@@ -92,6 +105,13 @@
 - install via homebrew
 - install [tpm](https://github.com/tmux-plugins/tpm)
 
+## [wezterm](https://wezterm.org/)
+
+- install via homebrew
+
+!> [!NOTE]
+> Experimental. Prefer `ghostty`.
+
 ## [zsh](https://ohmyz.sh)
 
 - install via `curl` or `make zsh`
@@ -102,13 +122,6 @@
   source ~/.zsh/alias.sh
   source ~/.zsh/addons.sh
   ```
-
-## [amethyst](https://github.com/ianyh/Amethyst)
-
-- install via homebrew
-
-> [!NOTE]
-> Prefer Window tiling from MacOS Sequioa.
 
 ## [Yazi](https://yazi-rs.github.io/)
 
