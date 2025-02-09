@@ -1,8 +1,8 @@
 # Dotfiles
 
-## snapshot @ 2025-02-03
+## snapshot @ 2025-02-09
 
-<img src="./_img/Screenshot 2568-02-03 at 10.46.41 AM.png" title="snapshot">
+<img src="./_img/Screenshot 2568-02-09 at 7.05.26 PM.png" title="snapshot">
 
 ## Current setup
 
@@ -12,6 +12,7 @@
 - `nvim`: text editor
 - `oh-my-posh`: prompt theme on top of `zsh`
 - `oh-my-zsh`: a framework for `zsh`
+- `sketchybar`: customized menu bar
 - `tmux`: terminal multiplexer for workspaces
 - `zsh`: a unix shell
 
