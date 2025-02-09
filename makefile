@@ -4,52 +4,37 @@
 	# cp $$HOME/.gitconfig ./
 
 brew-init:
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	$(MAKE) -C brew init
 
 brew-install:
-	brew bundle --file=brew/brew-$(type) --all
-
-zsh:
-	if test -f $$HOME/.zshrc ; then 
-		echo "already have $$HOME/.zshrc" 
-	else 
-		chsh -s $(which zsh)
-	fi
-	echo $$SHELL
-	$$SHELL --version
+	$(MAKE) -C brew install $(type)
 
 sketchybar-init:
-	brew services start sketchybar
-	echo "defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 24"
-	# cr: https://www.josean.com/posts/sketchybar-setup
+	$(MAKE) -C sketchybar init
 
 sketchybar-restart:
-	brew services restart sketchybar
+	$(MAKE) -C sketchybar restart
 
-devbox-init:
-	curl -fsSL https://get.jetify.com/devbox | bash
+sketchybar-stop:
+	$(MAKE) -C sketchybar stop
 
-ohmyzsh:
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-	sh install.sh
+reset-dock:
+	rm ~/Library/Application\ Support/Dock/*.db ; killall Dock
 
-# zsh-add-source:
-	# source_list=( "$$HOME/.zsh/alias.sh" "$$HOME/.zsh/addons.sh" )
-	# for src in $$source_list; do
-		# if [[ ! -z $(cat $$HOME/.zshrc | grep "source "$$src) ]]; then 
-			# echo $$src; 
-		# fi;
-	# done
-	# echo "$$source_list"
-
-stow:
-	stow --verbose --adopt --restow --target=$$HOME/ */
+stow:  
+	@for folder in $$(dirname $$(ls -d */Makefile)); do \
+		echo "---$$folder---"; \
+		$(MAKE) -C $$folder stow; \
+	done
 
 unstow:
-	stow --verbose --target=$$HOME --delete */
+	@for folder in $$(dirname $$(ls -d */Makefile)); do \
+		echo "---$$folder---"; \
+		$(MAKE) -C $$folder unstow; \
+	done
 
 clear-cache-nvim:
-	rm -rf $$HOME/.local/share/nvim
-	rm -rf $$HOME/.local/state/nvim/shada/
+	$(MAKE) -C nvim clear-cache;
+
 # credit
 # https://venthur.de/2021-12-19-managing-dotfiles-with-stow.html

@@ -1,0 +1,1 @@
+# [Direnv](https://direnv.net/)

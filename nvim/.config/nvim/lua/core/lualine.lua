@@ -50,8 +50,8 @@ return {
         -- theme = "codedark",
         -- theme = "nord",
         -- theme = "catppuccin",
-        theme = "nordic",
-        -- theme = "onedark",
+        -- theme = "nordic",
+        theme = "onedark",
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       }

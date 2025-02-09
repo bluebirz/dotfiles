@@ -4,7 +4,7 @@ return {
     -- colorscheme = "catppuccin",
     -- colorscheme = "tokyonight-storm",
     -- colorscheme = "nord",
-    colorscheme = "nordic",
-    -- colorscheme = "onedark",
+    -- colorscheme = "nordic",
+    colorscheme = "onedark",
   },
 }
