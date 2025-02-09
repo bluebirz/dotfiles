@@ -1,5 +1,3 @@
-source $HOME/.config/sketchybar/dir_const.sh
-
 opts=(
   script="$PLUGIN_DIR/wifi.sh"
   click_script="open /System/Library/PreferencePanes/Network.prefPane/"

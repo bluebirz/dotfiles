@@ -7,4 +7,4 @@ opts=(
   label.padding_right=20
 )
 
-sketchybar --add item front_app center --set front_app "${opts[@]}" --subscribe front_app front_app_switched
+sketchybar --add item front_app left --set front_app "${opts[@]}" --subscribe front_app front_app_switched

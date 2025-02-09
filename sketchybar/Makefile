@@ -15,3 +15,5 @@ restart:
 stop:
 	brew services stop sketchybar
 
+reload:
+	sketchybar --reload
