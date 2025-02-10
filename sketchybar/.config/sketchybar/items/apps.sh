@@ -3,7 +3,7 @@ source $HOME/.config/sketchybar/constants.sh
 
 opts=(
   script="$PLUGIN_DIR/front_app.sh"
-  label.font.style="Bold"
+  # label.font.style="Bold"
   # icon.background.drawing=on
   icon.padding_left=$ICON_PADDING_LR
   icon.padding_right$ICON_PADDING_LR

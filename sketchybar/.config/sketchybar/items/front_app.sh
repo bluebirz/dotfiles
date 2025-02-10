@@ -6,7 +6,7 @@ opts=(
   # icon.background.drawing=on
   # display=active
   script="$PLUGIN_DIR/front_app.sh"
-  click_script="open -a 'Mission Control'"
+  # click_script="open -a 'Mission Control'"
   # padding_right=0
   # padding_left=8
 )

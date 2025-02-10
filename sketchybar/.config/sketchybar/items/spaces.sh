@@ -11,13 +11,14 @@ whole_spaces_opts=(
 )
 
 each_space_opts=(
-  icon.padding_left=7
-  icon.padding_right=7
-  # background.color=0x40ffffff
-  # background.corner_radius=5
-  # background.height=25
+  icon.padding_left=$ICON_PADDING_LR
+  icon.padding_right=$ICON_PADDING_LR
+  background.color=$TRANSPARENT
+  background.border_color=$TRANSPARENT
+  background.border_width=0
   label.drawing=off
-  icon.highlight_color="$BLUE"
+  icon.color="$GREY"
+  icon.highlight_color="$WHITE"
   # label.color="$GREY"
   # label.highlight_color="$WHITE"
   script="$PLUGIN_DIR/space.sh"

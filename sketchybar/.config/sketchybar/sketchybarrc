@@ -28,6 +28,8 @@ default=(
   # background.padding_left=6
   # background.padding_right=6
   background.height=$BACKGROUND_HEIGHT
+  background.border_color=$GREY
+  background.border_width=$BACKGROUND_BORDER_WIDTH
   background.corner_radius=$BACKGROUND_CORNER_RADIUS
 )
 sketchybar --default "${default[@]}"
