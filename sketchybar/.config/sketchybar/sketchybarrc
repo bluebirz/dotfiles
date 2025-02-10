@@ -14,8 +14,8 @@ bar=(
 sketchybar --bar "${bar[@]}"
 
 default=(
-  padding_left=3
-  padding_right=3
+  padding_left=$DEFAULT_PADDING_LR
+  padding_right=$DEFAULT_PADDING_LR
   icon.font="$ICON_FONT:$ICON_WEIGHT:$ICON_SIZE"
   label.font="$LABEL_FONT:$LABEL_WEIGHT:$LABEL_SIZE"
   icon.color=$ICON_COLOR
@@ -32,12 +32,16 @@ default=(
 )
 sketchybar --default "${default[@]}"
 
+# left
 source "$ITEM_DIR/apple.sh"
 source "$ITEM_DIR/spaces.sh"
 source "$ITEM_DIR/front_app.sh"
 
+# right
 source "$ITEM_DIR/clock.sh"
+source "$ITEM_DIR/calendar.sh"
 source "$ITEM_DIR/battery.sh"
+source "$ITEM_DIR/input_source.sh"
 source "$ITEM_DIR/wifi.sh"
 source "$ITEM_DIR/volume.sh"
 source "$ITEM_DIR/media.sh"

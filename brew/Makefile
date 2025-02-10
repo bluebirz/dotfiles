@@ -8,5 +8,5 @@ init:
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 install:
-	brew bundle --file=brew/brew-$(type) --all
+	brew bundle --file=brew-$(type) --all
 

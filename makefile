@@ -7,7 +7,7 @@ brew-init:
 	$(MAKE) -C brew init
 
 brew-install:
-	$(MAKE) -C brew install $(type)
+	$(MAKE) -C brew install type=$(type)
 
 sketchybar-init:
 	$(MAKE) -C sketchybar init

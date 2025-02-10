@@ -17,3 +17,6 @@ stop:
 
 reload:
 	sketchybar --reload
+
+list_menu:
+	sketchybar --query default_menu_items
