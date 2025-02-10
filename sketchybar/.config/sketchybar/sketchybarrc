@@ -1,18 +1,17 @@
 # For a (much) more advanced configuration example see my dotfiles:
 # https://github.com/FelixKratz/dotfiles
 source $HOME/.config/sketchybar/dir_const.sh
+source $HOME/.config/sketchybar/color.sh
+source $HOME/.config/sketchybar/constants.sh
 
-ICON_FONT="CommitMono Nerd Font"
-ICON_WEIGHT="Bold"
-ICON_SIZE="14.0"
-ICON_COLOR="0xffffffff"
+bar=(
+  height=$BAR_HEIGHT
+  position=top 
+  color="$TRANSPARENT"
+  # blur_radius=24 
+)
 
-LABEL_FONT="CommitMono Nerd Font"
-LABEL_WEIGHT="Bold"
-LABEL_SIZE="13.0"
-LABEL_COLOR="0xffffffff"
-
-sketchybar --bar position=top height=24 blur_radius=24 color=0x40000000
+sketchybar --bar "${bar[@]}"
 
 default=(
   padding_left=3
@@ -21,10 +20,15 @@ default=(
   label.font="$LABEL_FONT:$LABEL_WEIGHT:$LABEL_SIZE"
   icon.color=$ICON_COLOR
   label.color=$LABEL_COLOR
-  icon.padding_left=4
-  icon.padding_right=4
-  label.padding_left=4
-  label.padding_right=4
+  icon.padding_left="$ICON_PADDING_LR"
+  # icon.padding_right="$PADDING"
+  label.padding_left="$LABEL_PADDING_LR"
+  label.padding_right="$LABEL_PADDING_LR" 
+  background.color="$BLACK"
+  # background.padding_left=6
+  # background.padding_right=6
+  background.height=$BACKGROUND_HEIGHT
+  background.corner_radius=$BACKGROUND_CORNER_RADIUS
 )
 sketchybar --default "${default[@]}"
 

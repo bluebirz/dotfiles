@@ -6,7 +6,7 @@ unstow:
 
 init:
 	brew services start sketchybar
-	defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 24
+	defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 32
 	# cr: https://www.josean.com/posts/sketchybar-setup
 
 restart:
