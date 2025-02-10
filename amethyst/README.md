@@ -3,5 +3,5 @@
 - install via homebrew
 
 > [!NOTE]
-> ~~Prefer Window tiling from MacOS Sequioa.~~
+> ~~Prefer Window tiling from MacOS Sequioa.~~  
 > Prefer Rectangle.

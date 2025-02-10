@@ -5,5 +5,5 @@
 - hide menubar in "setting > control center"
 
 > [!NOTE]
-> ~~not in-used, pending for fix after updating MacOS Sequioa.~~
+> ~~not in-used, pending for fix after updating MacOS Sequioa.~~  
 > back to use. Not use window tiling, but Rectangle.

@@ -1,6 +1,5 @@
 # [oh-my-posh](https://ohmyposh.dev/)
 
--
 - install via homebrew
 - update prompt at <https://ohmyposh.dev/docs/installation/prompt>
 
