@@ -2,7 +2,7 @@
 
 ## snapshot @ 2025-02-10
 
-<img src="./_img/Screenshot 2568-02-10 at 3.50.33 PM.png" title="snapshot">
+<img src="./_img/Screenshot 2568-02-10 at 11.03.16 PM.png" title="snapshot">
 
 ## Current setup
 
