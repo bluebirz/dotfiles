@@ -1,8 +1,8 @@
 # Dotfiles
 
-## snapshot @ 2025-02-09
+## snapshot @ 2025-02-10
 
-<img src="./_img/Screenshot 2568-02-09 at 7.05.26 PM.png" title="snapshot">
+<img src="./_img/Screenshot 2568-02-10 at 3.50.33 PM.png" title="snapshot">
 
 ## Current setup
 
