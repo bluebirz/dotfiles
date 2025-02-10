@@ -6,8 +6,10 @@ source $HOME/.config/sketchybar/constants.sh
 
 bar=(
   height=$BAR_HEIGHT
-  position=top 
+  position=$BAR_POSITION 
+  # sticky=on
   color="$TRANSPARENT"
+  padding_top=$BAR_PADDING_TOP
   # blur_radius=24 
 )
 
@@ -18,18 +20,18 @@ default=(
   padding_right=$DEFAULT_PADDING_LR
   icon.font="$ICON_FONT:$ICON_WEIGHT:$ICON_SIZE"
   label.font="$LABEL_FONT:$LABEL_WEIGHT:$LABEL_SIZE"
-  icon.color=$ICON_COLOR
-  label.color=$LABEL_COLOR
+  icon.color=$WHITE
+  label.color=$WHITE
   icon.padding_left="$ICON_PADDING_LR"
   # icon.padding_right="$PADDING"
   label.padding_left="$LABEL_PADDING_LR"
   label.padding_right="$LABEL_PADDING_LR" 
-  background.color="$BLACK"
+  background.height=$BACKGROUND_HEIGHT
+  background.color=$BLACK
   # background.padding_left=6
   # background.padding_right=6
-  background.height=$BACKGROUND_HEIGHT
-  background.border_color=$GREY
-  background.border_width=$BACKGROUND_BORDER_WIDTH
+  # background.border_color=$GREY
+  # background.border_width=$BACKGROUND_BORDER_WIDTH
   background.corner_radius=$BACKGROUND_CORNER_RADIUS
 )
 sketchybar --default "${default[@]}"
@@ -49,3 +51,7 @@ source "$ITEM_DIR/volume.sh"
 source "$ITEM_DIR/media.sh"
 
 sketchybar --update
+
+
+# Dynamic Island
+# dynamic-island-sketchybar
