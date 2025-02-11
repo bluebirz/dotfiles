@@ -5,20 +5,20 @@ source $HOME/.config/sketchybar/constants.sh
 SPACE_ICONS=("一" "二" "三" "四" "五" "六" "七" "八" "九" "十")
 
 whole_spaces_opts=(
-  background.color=$BLACK
-  background.corner_radius=8
+  background.color=$SPACESET_BACKGROUND_COLOR
+  background.corner_radius=$SPACESET_BACKGROUND_CORNER_RADIUS
   # background.border_color=$RED
 )
 
 each_space_opts=(
   icon.padding_left=$ICON_PADDING_LR
   icon.padding_right=$ICON_PADDING_LR
-  background.color=$TRANSPARENT
+  background.color=$SPACE_BACKGROUND_COLOR
   background.border_color=$TRANSPARENT
-  background.border_width=0
+  background.border_width=$SPACE_BACKGROUND_BORDER_WIDTH
   label.drawing=off
-  icon.color=$GREY
-  icon.highlight_color="$WHITE"
+  icon.color=$SPACE_ICON_INACTIVE_COLOR
+  icon.highlight_color=$SPACE_ICON_ACTIVE_COLOR
   # label.color="$GREY"
   # label.highlight_color="$WHITE"
   script="$PLUGIN_DIR/space.sh"

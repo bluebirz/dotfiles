@@ -1,14 +1,14 @@
 #!/bin/bash
 
+source $HOME/.config/sketchybar/dir_const.sh
+source $HOME/.config/sketchybar/constants.sh
+
 opts=(
-  # label.font="$FONT:Black:12.0"
-  # label.drawing=off
-  # icon.background.drawing=on
-  # display=active
+  icon.font="$APPICON_FONT:$APPICON_WEIGHT:$APPICON_SIZE"
   script="$PLUGIN_DIR/front_app.sh"
-  # click_script="open -a 'Mission Control'"
-  # padding_right=0
-  # padding_left=8
+  icon.padding_left=$APPICON_PADDING_LR
+  icon.padding_right=$ICON_PADDING_LR
+  label.padding_right=$LABEL_PADDING_LR
 )
 
-sketchybar --add item front_app left --set front_app "${opts[@]}" --subscribe front_app front_app_switched
+sketchybar --add item front_app center --set front_app "${opts[@]}" --subscribe front_app front_app_switched

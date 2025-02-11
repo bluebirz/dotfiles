@@ -8,7 +8,7 @@ bar=(
   height=$BAR_HEIGHT
   position=$BAR_POSITION 
   # sticky=on
-  color="$TRANSPARENT"
+  color=$BAR_COLOR
   padding_top=$BAR_PADDING_TOP
   # blur_radius=24 
 )
@@ -20,14 +20,14 @@ default=(
   padding_right=$DEFAULT_PADDING_LR
   icon.font="$ICON_FONT:$ICON_WEIGHT:$ICON_SIZE"
   label.font="$LABEL_FONT:$LABEL_WEIGHT:$LABEL_SIZE"
-  icon.color=$WHITE
-  label.color=$WHITE
-  icon.padding_left="$ICON_PADDING_LR"
+  icon.color=$ICON_COLOR
+  label.color=$LABEL_COLOR
+  # icon.padding_left="$ICON_PADDING_LR"
   # icon.padding_right="$PADDING"
-  label.padding_left="$LABEL_PADDING_LR"
-  label.padding_right="$LABEL_PADDING_LR" 
+  # label.padding_left="$LABEL_PADDING_LR"
+  # label.padding_right="$LABEL_PADDING_LR" 
   background.height=$BACKGROUND_HEIGHT
-  background.color=$BLACK
+  background.color=$BACKGROUND_COLOR
   # background.padding_left=6
   # background.padding_right=6
   # background.border_color=$GREY
@@ -39,16 +39,17 @@ sketchybar --default "${default[@]}"
 # left
 source "$ITEM_DIR/apple.sh"
 source "$ITEM_DIR/spaces.sh"
+# source "$ITEM_DIR/chevron.sh"
+source "$ITEM_DIR/media.sh"
+
+# center
 source "$ITEM_DIR/front_app.sh"
 
 # right
 source "$ITEM_DIR/clock.sh"
 source "$ITEM_DIR/calendar.sh"
-source "$ITEM_DIR/battery.sh"
-source "$ITEM_DIR/input_source.sh"
+source "$ITEM_DIR/system_tray.sh"
 source "$ITEM_DIR/wifi.sh"
-source "$ITEM_DIR/volume.sh"
-source "$ITEM_DIR/media.sh"
 
 sketchybar --update
 
