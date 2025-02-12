@@ -1,6 +1,7 @@
 function icon_map() {
   app_name=$(echo "$1" | awk '{print tolower($0)}')
   case $app_name in
+  "activity monitor") icon_result=:activity_monitor: ;;
   "alacritty") icon_result=:alacritty: ;;
   "app store") icon_result=:app_store: ;;
   "books") icon_result=:book: ;;
@@ -48,6 +49,7 @@ function icon_map() {
   # "ps remote play") icon_result= ;;
   "reminders") icon_result=:reminders: ;;
   "safari") icon_result=:safari: ;;
+  "sf symbols") icon_result=:sf_symbols: ;;
   "slack") icon_result=:slack: ;;
   "spotify") icon_result=:spotify: ;;
   "system settings") icon_result=:gear: ;;

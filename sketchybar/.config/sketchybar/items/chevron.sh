@@ -10,4 +10,4 @@ opts=(
   # icon.padding_right=$ICON_PADDING_LR
 )
 
-sketchybar --add item chevron left --set chevron "${opts[@]}"
+sketchybar --add item chevron "$1" --set chevron "${opts[@]}"

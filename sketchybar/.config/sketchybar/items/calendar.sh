@@ -7,4 +7,4 @@ opts=(
   update_freq=120
   script="$PLUGIN_DIR/calendar.sh"
 )
-sketchybar --add item calendar right --set calendar "${opts[@]}"
+sketchybar --add item calendar "$1" --set calendar "${opts[@]}"

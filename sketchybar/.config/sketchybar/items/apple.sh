@@ -17,4 +17,4 @@ apple_logo=(
   # background.drawing=off
 )
 
-sketchybar --add item apple left --set apple "${apple_logo[@]}"
+sketchybar --add item apple "$1" --set apple "${apple_logo[@]}"

@@ -36,20 +36,20 @@ default=(
 )
 sketchybar --default "${default[@]}"
 
-# left
-source "$ITEM_DIR/apple.sh"
-source "$ITEM_DIR/spaces.sh"
-# source "$ITEM_DIR/chevron.sh"
-source "$ITEM_DIR/media.sh"
+L="left"
+C="center"
+R="right"
 
-# center
-source "$ITEM_DIR/front_app.sh"
+source "$ITEM_DIR/apple.sh" "$L"
+source "$ITEM_DIR/spaces.sh" "$L"
+source "$ITEM_DIR/chevron.sh" "$L"
+source "$ITEM_DIR/front_app.sh" "$L"
+source "$ITEM_DIR/media.sh" "$L"
 
-# right
-source "$ITEM_DIR/clock.sh"
-source "$ITEM_DIR/calendar.sh"
-source "$ITEM_DIR/system_tray.sh"
-source "$ITEM_DIR/wifi.sh"
+source "$ITEM_DIR/clock.sh" "$R"
+source "$ITEM_DIR/calendar.sh" "$R"
+source "$ITEM_DIR/system_tray.sh" "$R"
+source "$ITEM_DIR/wifi.sh" "$R"
 
 sketchybar --update
 

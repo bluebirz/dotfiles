@@ -8,4 +8,4 @@ opts=(
   script="$PLUGIN_DIR/clock.sh"
 )
 
-sketchybar --add item clock right --set clock "${opts[@]}"
+sketchybar --add item clock "$1" --set clock "${opts[@]}"

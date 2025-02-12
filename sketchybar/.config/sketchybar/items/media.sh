@@ -10,4 +10,4 @@ opts=(
   label.padding_right=$LABEL_PADDING_LR
 )
 
-sketchybar --add item media left --set media drawing=off "${opts[@]}" --subscribe media media_change system_woke
+sketchybar --add item media "$1" --set media drawing=off "${opts[@]}" --subscribe media media_change system_woke

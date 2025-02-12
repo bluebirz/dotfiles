@@ -24,9 +24,9 @@ opts_input_alias=(
   label.drawing=off
 )
 
-sketchybar --add item battery right --set battery "${opts_battery[@]}" --subscribe battery system_woke power_source_change
-sketchybar --add item volume right --set volume  "${opts_volume[@]}" --subscribe volume volume_change
-sketchybar --add alias "TextInputMenuAgent,Item-0" right \
+sketchybar --add item battery "$1" --set battery "${opts_battery[@]}" --subscribe battery system_woke power_source_change
+sketchybar --add item volume "$1" --set volume  "${opts_volume[@]}" --subscribe volume volume_change
+sketchybar --add alias "TextInputMenuAgent,Item-0" "$1" \
   --rename "TextInputMenuAgent,Item-0" input_alias \
   --set input_alias  "${opts_input_alias[@]}" \
   --add event input_change AppleSelectedInputSourcesChangedNotification \

@@ -9,4 +9,4 @@ opts=(
   label.padding_right=$LABEL_PADDING_LR
 )
 
-sketchybar --add item wifi right --set wifi "${opts[@]}" --subscribe wifi wifi_change
+sketchybar --add item wifi "$1" --set wifi "${opts[@]}" --subscribe wifi wifi_change

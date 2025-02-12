@@ -32,7 +32,7 @@ for i in "${!SPACE_ICONS[@]}"; do
   sid="$(($i + 1))"
   spaces+=(space."$sid")
 
-  sketchybar --add space space."$sid" left \
+  sketchybar --add space space."$sid" "$1" \
     --set space."$sid" associated_space=$sid icon=${SPACE_ICONS[i]} "${each_space_opts[@]}"
 done
 
