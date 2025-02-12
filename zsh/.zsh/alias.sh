@@ -1,6 +1,6 @@
 alias lsofp="sudo lsof -iTCP -sTCP:LISTEN -n -P"
 upd() (
-  HIGHLIGHT="\033[1;44m"
+  HIGHLIGHT="\033[1;94m"
   TIMESTAMPER="\033[31m"
   RESET="\033[0m"
   PREFIX="\$ Updating "
