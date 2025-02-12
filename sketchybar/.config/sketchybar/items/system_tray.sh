@@ -9,12 +9,18 @@ opts_battery=(
   update_freq=120 
   script="$PLUGIN_DIR/battery.sh"
   label.drawing=off
+  background.color=$SPACE_BACKGROUND_COLOR
+  background.border_color=$SPACE_BACKGROUND_BORDER_WIDTHOR
+  background.border_width=$SPACE_BACKGROUND_BORDER_WIDTH
 )
 opts_volume=(
   icon.padding_left=0
   icon.padding_right=$ICON_PADDING_LR
   script="$PLUGIN_DIR/volume.sh"
   label.drawing=off
+  background.color=$SPACE_BACKGROUND_COLOR
+  background.border_color=$SPACE_BACKGROUND_BORDER_WIDTHOR
+  background.border_width=$SPACE_BACKGROUND_BORDER_WIDTH
 )
 opts_input_alias=(
   icon.padding_left=-$ICON_PADDING_LR
@@ -22,6 +28,9 @@ opts_input_alias=(
   icon.drawing=on
   icon.color=$ICON_COLOR
   label.drawing=off
+  background.color=$SPACE_BACKGROUND_COLOR
+  background.border_color=$SPACE_BACKGROUND_BORDER_WIDTHOR
+  background.border_width=$SPACE_BACKGROUND_BORDER_WIDTH
 )
 
 sketchybar --add item battery "$1" --set battery "${opts_battery[@]}" --subscribe battery system_woke power_source_change

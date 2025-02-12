@@ -27,11 +27,11 @@ default=(
   # label.padding_left="$LABEL_PADDING_LR"
   # label.padding_right="$LABEL_PADDING_LR" 
   background.height=$BACKGROUND_HEIGHT
-  background.color=$BACKGROUND_COLOR
+  background.color=$SPACESET_BACKGROUND_COLOR
   # background.padding_left=6
   # background.padding_right=6
-  # background.border_color=$GREY
-  # background.border_width=$BACKGROUND_BORDER_WIDTH
+  background.border_color=$SPACESET_BACKGROUND_BORDER_COLOR
+  background.border_width=$BACKGROUND_BORDER_WIDTH
   background.corner_radius=$BACKGROUND_CORNER_RADIUS
 )
 sketchybar --default "${default[@]}"
