@@ -6,7 +6,7 @@ plugins-upgrade:
 	@ya pack -u
 
 stow:
-	@echo "do nothing"
+	@stow --verbose --adopt --restow --target=$$HOME/ .
 
 unstow:
-	@echo "do nothing"
+	@stow --verbose --target=$$HOME --delete .
