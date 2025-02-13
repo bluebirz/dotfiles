@@ -15,6 +15,9 @@ sketchybar-init:
 sketchybar-restart:
 	$(MAKE) -C sketchybar restart
 
+sketchybar-reload:
+	$(MAKE) -C sketchybar reload
+
 sketchybar-stop:
 	$(MAKE) -C sketchybar stop
 

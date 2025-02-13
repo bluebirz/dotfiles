@@ -6,7 +6,7 @@ opts=(
   label.drawing=off
   icon.color=$ORANGE
   background.drawing=off
-  icon.padding_left=$ICON_PADDING_LR
+  icon.padding_left=$ICON_PADDING_L
   # icon.padding_right=$ICON_PADDING_LR
 )
 

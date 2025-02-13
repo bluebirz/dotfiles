@@ -3,12 +3,12 @@ source $HOME/.config/sketchybar/constants.sh
 
 apple_logo=(
   icon=""
-  padding_left=$DEFAULT_PADDING_LR
+  padding_left=$DEFAULT_PADDING_L
   icon.color=$APPLE_ICON_COLOR
   icon.font.size=$APPLE_ICON_SIZE
   icon.y_offset=$APPLE_Y_OFFSET
-  icon.padding_left=$ICON_PADDING_LR
-  icon.padding_right=$ICON_PADDING_LR
+  icon.padding_left=$ICON_PADDING_L
+  icon.padding_right=$ICON_PADDING_R
   # icon.color=$RED_BORDER
   click_script="open -a 'System Preferences'; sketchybar --set apple.logo popup.drawing=off"
   # background.color="$BACKGROUND"
