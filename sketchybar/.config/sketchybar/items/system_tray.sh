@@ -23,8 +23,8 @@ opts_volume=(
   background.border_width=$SPACE_BACKGROUND_BORDER_WIDTH
 )
 opts_alias=(
-  # icon.padding_left="-$ICON_PADDING_LR"
-  # icon.padding_right="-$ICON_PADDING_LR"
+  # icon.padding_left=$ALIAS_PADDING_L
+  # icon.padding_right=$ALIAS_PADDING_R
   # label.padding_right=-$LABEL_PADDING_LR
   padding_left=$ALIAS_PADDING_L
   padding_right=$ALIAS_PADDING_R
@@ -43,15 +43,15 @@ sketchybar --add item battery "$1" --set battery "${opts_battery[@]}" --subscrib
 #   --rename "Control Center,Battery" battery_alias \
 #   --set battery_alias  "${opts_alias[@]}" \
 #   --subscribe battery system_woke power_source_change
+sketchybar --add alias "Control Center,Sound" "$1" \
+  --rename "Control Center,Sound" sound_alias \
+  --set sound_alias  "${opts_alias[@]}" \
+  --subscribe volume volume_change
 sketchybar --add alias "TextInputMenuAgent,Item-0" "$1" \
   --rename "TextInputMenuAgent,Item-0" input_alias \
   --set input_alias  "${opts_alias[@]}" \
   --add event input_change AppleSelectedInputSourcesChangedNotification \
   --subscribe input_alias input_change system_woke
-sketchybar --add alias "Control Center,Sound" "$1" \
-  --rename "Control Center,Sound" sound_alias \
-  --set sound_alias  "${opts_alias[@]}" \
-  --subscribe volume volume_change
 sketchybar --add alias "Amphetamine,Amphetamine" "$1" \
   --rename "Amphetamine,Amphetamine" amph_alias \
   --set amph_alias  "${opts_alias[@]}" \
