@@ -17,4 +17,5 @@ lazy-lock.json
 .DS_Store
 
 #submodules
-yazi/.config/yazi/plugins
+yazi/.config/yazi/plugins/
+yazi/.config/yazi/init.lua
