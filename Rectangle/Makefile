@@ -1,5 +1,7 @@
-stow:
-	@stow --verbose --adopt --restow --target="$$HOME/Library/Application Support" Rectangle
+path := "$$HOME/Library/Application Support/"
+
+stow: 
+	@stow --verbose=1 --adopt --restow --target=$(path) Rectangle 
 
 unstow:
-	@stow --verbose --target="$$HOME/Library/Application Support/Rectangle/" --delete Rectangle
+	@stow --verbose=1 --target=$(path) --delete Rectangle
