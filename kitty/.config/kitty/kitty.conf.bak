@@ -1,0 +1,47 @@
+# vim:fileencoding=utf-8:foldmethod=marker
+
+# disable_ligatures never
+
+     modify_font underline_position +3.0
+#:     modify_font underline_thickness 150%
+#:     modify_font strikethrough_position 2px
+#:     modify_font cell_width 80%
+#:     modify_font cell_height -2px
+#:     modify_font baseline 3
+     modify_font cell_height 110%
+
+# cursor #cccccc
+# cursor_text_color #111111
+# cursor_shape block
+cursor_shape underline
+
+window_margin_width 5
+# window_padding_width 0
+# hide_window_decorations no
+hide_window_decorations titlebar-only
+tab_bar_align center
+background_opacity 0.97
+# background_blur 0
+
+# shell_integration enabled
+shell_integration no-cursor
+
+# mapping: nvim :: https://www.reddit.com/r/neovim/comments/mbj8m5/how_to_setup_ctrlshiftkey_mappings_in_neovim_and/
+# map ctrl+shift+s send_text all \x1b[83;5u
+
+# BEGIN_KITTY_THEME
+# include ./theme-tokyo-night-storm.conf
+# include ./theme-nord.conf
+include ./theme-catppucin-macchiato.conf
+# include ./theme-catppucin-frappe.conf
+# END_KITTY_THEME
+
+
+font_size 14.0
+
+# BEGIN_KITTY_FONTS
+font_family      family="SauceCodePro Nerd Font"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
