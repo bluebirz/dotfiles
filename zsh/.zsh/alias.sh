@@ -23,3 +23,5 @@ alias dvb="devbox"
 alias tmx="tmux attach"
 alias lgg="lazygit"
 alias ldk="lazydocker"
+
+alias lsz="eza -l -G --icons=always --color=always --git --no-user -o --total-size --time-style '+%Y-%m-%d %H:%M'"

@@ -7,7 +7,7 @@ local conf = {
     require("neomodern").setup({
       -- optional configuration here
       theme = "iceclimber",
-      transparent = false,
+      transparent = true,
       plain_float = true,
       plugin = {
         cmp = {
