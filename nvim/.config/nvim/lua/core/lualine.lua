@@ -47,8 +47,8 @@ local opt = {
   -- theme = "catppuccin",
   -- theme = "nordic",
   -- theme = "onedark",
-  theme = "night-owl",
-  -- theme = "auto",
+  -- theme = "night-owl",
+  theme = "auto",
   component_separators = { left = "", right = "" },
   section_separators = { left = "", right = "" },
 }

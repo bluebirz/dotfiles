@@ -8,6 +8,7 @@ return {
     -- colorscheme = "onedark",
     -- colorscheme = "cyberdream",
     -- colorscheme = "bamboo",
-    colorscheme = "night-owl",
+    -- colorscheme = "night-owl",
+    colorscheme = "neomodern",
   },
 }

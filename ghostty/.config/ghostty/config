@@ -13,4 +13,4 @@ cursor-color = #ffffff
 cursor-style = underline
 
 background-opacity = 0.95
-theme = "night-owl.conf"
+theme = "neomodern-iceclimber.conf"

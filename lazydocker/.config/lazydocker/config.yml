@@ -1,0 +1,7 @@
+# doc: https://github.com/jesseduffield/lazydocker/blob/master/docs/Config.md
+gui:
+  theme:
+    # Border color of focused window
+    activeBorderColor:
+      - "#e5b987"
+      - bold
