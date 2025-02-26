@@ -2,7 +2,5 @@
 
 - install via homebrew
 
-!> [!NOTE]
+> [!NOTE]
 > Experimental. Prefer `ghostty`.
-
-
