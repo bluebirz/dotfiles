@@ -1,4 +1,4 @@
-return {
+local conf = {
   "catppuccin/nvim",
   name = "catppuccin",
   priority = 1000,
@@ -7,3 +7,5 @@ return {
     transparent_background = true,
   },
 }
+
+return {}

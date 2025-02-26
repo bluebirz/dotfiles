@@ -1,4 +1,4 @@
-return {
+local conf = {
   "folke/tokyonight.nvim",
   opts = {
     transparent = true,
@@ -8,3 +8,5 @@ return {
     },
   },
 }
+
+return {}

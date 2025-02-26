@@ -9,7 +9,8 @@ window-padding-x = 5,5
 window-padding-y = 5,5
 
 shell-integration-features = no-cursor
+cursor-color = #ffffff
 cursor-style = underline
 
-background-opacity = 0.97
-theme = "nordic.conf"
+background-opacity = 0.95
+theme = "night-owl.conf"

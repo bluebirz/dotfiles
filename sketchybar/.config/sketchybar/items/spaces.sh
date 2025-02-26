@@ -14,8 +14,8 @@ whole_spaces_opts=(
 )
 
 each_space_opts=(
-  icon.padding_left=$ICON_PADDING_L
-  icon.padding_right=$ICON_PADDING_R
+  icon.padding_left=$SPACE_ICON_PADDDING_L
+  icon.padding_right=$SPACE_ICON_PADDDING_R
   background.color=$SPACE_BACKGROUND_COLOR
   background.border_color=$SPACE_BACKGROUND_BORDER_COLOR
   background.border_width=$SPACE_BACKGROUND_BORDER_WIDTH

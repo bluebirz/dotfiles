@@ -1,3 +1,10 @@
+local colors = {
+  blue = "#2780e6",
+  orange = "#e68d27",
+  light_blue = "#87b3e6",
+  light_orange = "#e5b987",
+}
+
 return {
   "akinsho/bufferline.nvim",
   version = "*",
@@ -24,7 +31,7 @@ return {
       --   fg = "#000000",
       -- },
       buffer_selected = {
-        fg = "#e68d27",
+        fg = colors.light_orange,
         -- bg = "#2780e6",
         bold = true,
         italic = true,
@@ -34,7 +41,7 @@ return {
       --   bg = "<colour-value-here>",
       -- },
       indicator_selected = {
-        fg = "#e68d27",
+        fg = colors.light_orange,
         --   bg = "<colour-value-here>",
       },
       separator_selected = {

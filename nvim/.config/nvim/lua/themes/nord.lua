@@ -1,6 +1,7 @@
 vim.g.nord_disable_background = true
 
-return {
+local conf = {
+
   -- "shaunsingh/nord.nvim",
   "gbprod/nord.nvim",
   config = function()
@@ -49,3 +50,5 @@ return {
     })
   end,
 }
+
+return {}

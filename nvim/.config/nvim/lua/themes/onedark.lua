@@ -1,4 +1,4 @@
-return {
+local conf = {
   "navarasu/onedark.nvim",
   lazy = false,
   priority = 1000,
@@ -21,3 +21,5 @@ return {
     -- require("onedark").load()
   end,
 }
+
+return {}

@@ -1,4 +1,4 @@
-return {
+local conf = {
   "AlexvZyl/nordic.nvim",
   lazy = false,
   priority = 1000,
@@ -57,3 +57,5 @@ return {
     })
   end,
 }
+
+return {}

@@ -1,4 +1,4 @@
-return {
+local conf = {
   "levouh/tint.nvim",
   config = function()
     require("tint").setup({
@@ -34,3 +34,5 @@ return {
     })
   end,
 }
+
+return { conf }
