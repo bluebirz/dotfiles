@@ -46,12 +46,14 @@ blocks:
     overflow: hidden
     segments:
       - style: plain
-        template: "{{ .FormattedMs }}"
-        foreground: yellow
+        template: "󱦟 {{ .FormattedMs }}"
+        foreground: "#808080"
         background: transparent
         type: executiontime
         properties:
-          threshold: 5000
+          threshold: 1000
+          style: round
+          always_enabled: false
   - type: prompt
     alignment: left
     newline: true
