@@ -78,12 +78,12 @@ autoload -Uz compinit && compinit
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  direnv
-)
+# plugins=(
+#   git
+#   zsh-autosuggestions
+#   zsh-syntax-highlighting
+#   direnv
+# )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -129,10 +129,6 @@ setopt hist_verify            # show command with history expansion to user befo
 # clear history
 history -c 2>/dev/null
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/bluebirz/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/bluebirz/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
@@ -162,9 +158,9 @@ unset __conda_setup
 # Created by `pipx` on 2024-05-26 13:01:32
 export PATH="$PATH:/Users/bluebirz/.local/bin"
 
+source ~/.zsh/exports.sh
 source ~/.zsh/alias.sh
 source ~/.zsh/addons.sh
-source ~/.zsh/direnv-devbox.sh
 
 # Enable oh-my-posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/zen-icons.yaml)"

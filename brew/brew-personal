@@ -10,7 +10,6 @@ tap "jesseduffield/lazygit"
 tap "mikesmithgh/git-prompt-string"
 
 brew "atuin"
-brew "awscli"
 brew "bat"
 brew "black", link: false
 brew "direnv"
@@ -60,6 +59,8 @@ brew "yq"
 brew "zellij"
 brew "zoxide"
 brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
 
 cask "alt-tab"
 cask "font-sf-pro"
