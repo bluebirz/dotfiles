@@ -13,7 +13,7 @@ upd() (
   echo ${TIMESTAMPER}'Finished at '$(date -u "+%Y-%m-%d %H:%M:%S")${RESET}
 )
 
-alias nv="nvim ." # nvim
+alias nv="nvim"   # nvim
 alias yz="yazi ." # yazi
 alias zl="zellij"
 # alias prep_py="python3 -m venv venv && echo \"source venv/bin/activate\nlayout python\" > .envrc && direnv allow"
