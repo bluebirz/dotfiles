@@ -4,27 +4,39 @@ return {
   config = function()
     -- require("alpha").setup(require("alpha.themes.startify").config)
     local alpha = require("alpha")
-    local startify = require("alpha.themes.startify")
-    startify.section.header.val = {
-      -- [[                                   __                ]],
-      -- [[      ___     ___    ___   __  __ /\_\    ___ ___    ]],
-      -- [[     / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\  ]],
-      -- [[    /\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \ ]],
-      -- [[    \ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
-      -- [[     \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
-      [[                              ]],
-      [[   ,--.   ,--.                ]],
-      [[   |  |-. |  |,--.,--. ,---.  ]],
-      [[   | .-. '|  ||  ||  || .-. : ]],
-      [[   | `-' ||  |'  ''  '\   --. ]],
-      [[    `---' `--' `----'  `----' ]],
-      [[   ,--.   ,--.                ]],
-      [[   |  |-. `--',--.--.,-----.  ]],
-      [[   | .-. ',--.|  .--'`-.  /   ]],
-      [[   | `-' ||  ||  |    /  `-.  ]],
-      [[    `---' `--'`--'   `-----'  ]],
-      [[                              ]],
+    local theta = require("alpha.themes.theta")
+    local dashboard = require("alpha.themes.dashboard")
+    math.randomseed(os.time())
+    local function pick_color()
+      local colors = { "String", "Identifier", "Keyword", "Number" }
+      return colors[math.random(#colors)]
+    end
+
+    theta.header.val = {
+      [[,--.   ,--.               ]],
+      [[|  |-. |  |,--.,--. ,---. ]],
+      [[| .-. '|  ||  ||  || .-. :]],
+      [[| `-' ||  |'  ''  '\   --.]],
+      [[ `---' `--' `----'  `----']],
+      [[,--.   ,--.               ]],
+      [[|  |-. `--',--.--.,-----. ]],
+      [[| .-. ',--.|  .--'`-.  /  ]],
+      [[| `-' ||  ||  |    /  `-. ]],
+      [[ `---' `--'`--'   `-----' ]],
     }
-    alpha.setup(startify.config)
+    theta.header.opts.hl = pick_color()
+    --
+    theta.buttons.val = {
+      { type = "text", val = "Operations", opts = { hl = "SpecialComment", position = "center" } },
+      { type = "padding", val = 1 },
+      dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
+      dashboard.button("e", "  Yazi", "<cmd>Yazi<cr>"),
+      dashboard.button("f", "󰱼  FZF File", "<cmd>FzfLua files<cr>"),
+      dashboard.button("l", "󱎸  FZF Live Grep", "<cmd>FzfLua live_grep<cr>"),
+      dashboard.button("g", "  Lazygit", "<cmd>LazyGit<cr>"),
+      dashboard.button("q", "  Quit NVIM", ":qa<CR>"),
+    }
+
+    alpha.setup(theta.config)
   end,
 }
