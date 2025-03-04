@@ -8,7 +8,7 @@ return {
     local dashboard = require("alpha.themes.dashboard")
     math.randomseed(os.time())
     local function pick_color()
-      local colors = { "String", "Identifier", "Keyword", "Number" }
+      local colors = { "String", "Identifier", "Keyword", "Number", "Error" }
       return colors[math.random(#colors)]
     end
 

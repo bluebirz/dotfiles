@@ -12,5 +12,6 @@ shell-integration-features = no-cursor
 cursor-color = #ffffff
 cursor-style = underline
 
-background-opacity = 0.93
-theme = "neomodern-iceclimber.conf"
+background-opacity = 0.9
+background-blur = 30
+theme = "tokyonight_night.conf"
