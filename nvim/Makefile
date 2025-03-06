@@ -1,8 +1,8 @@
 stow:
-	@stow --verbose --adopt --restow --target=$$HOME/ .
+	@stow --verbose --adopt --restow --dotfiles --target=$$HOME/ .
 
 unstow:
-	@stow --verbose --target=$$HOME --delete .
+	@stow --verbose --dotfiles --target=$$HOME --delete .
 
 install-plugins:
 	@sh ~/.local/share/nvim/lazy/markdown-preview.nvim/app/install.sh

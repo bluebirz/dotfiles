@@ -32,13 +32,14 @@ augroup END
 --   autocmd WinLeave * call s:DimInactiveWindow()
 -- ]])
 
-vim.cmd([[
-  set cursorline
-  hi cursorline cterm=none term=none
-  autocmd WinEnter * setlocal cursorline
-  autocmd WinLeave * setlocal nocursorline
-  highlight CursorLine guibg=#303000 ctermbg=234
-]])
+-- set cursorline
+-- vim.cmd([[
+--   set cursorline
+--   hi cursorline cterm=none term=none
+--   autocmd WinEnter * setlocal cursorline
+--   autocmd WinLeave * setlocal nocursorline
+--   highlight CursorLine guibg=#303000 ctermbg=234
+-- ]])
 -- vim.cmd([[highlight Visual cterm=bold ctermbg=none ctermfg=none]])
 
 -- See ":help neo-tree-highlights" for a list of available highlight groups

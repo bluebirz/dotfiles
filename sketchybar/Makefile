@@ -1,8 +1,8 @@
 stow:
-	@stow --verbose --adopt --restow --target=$$HOME/ .
+	@stow --verbose --adopt --restow --dotfiles --target=$$HOME/ .
 
 unstow:
-	@stow --verbose --target=$$HOME --delete .
+	@stow --verbose --dotfiles --target=$$HOME --delete .
 
 init:
 	@brew services start sketchybar

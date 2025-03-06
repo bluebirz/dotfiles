@@ -1,10 +1,10 @@
 .PHONY: plugins-install update-init-lua stow 
 
 stow:
-	@stow --verbose --adopt --restow --target=$$HOME/ .
+	@stow --verbose --adopt --restow --dotfiles --target=$$HOME/ .
 
 unstow:
-	@stow --verbose --target=$$HOME --delete .
+	@stow --verbose --dotfiles --target=$$HOME --delete .
 
 plugins-install:
 	@cd ./.config/yazi
