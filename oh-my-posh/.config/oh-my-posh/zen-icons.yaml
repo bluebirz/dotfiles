@@ -32,11 +32,11 @@ blocks:
           fetch_status: true
           fetch_upstream_icon: true
           source: cli
-  - type: rprompt
-    overflow: hidden
-    segments:
+      # - type: rprompt
+      #   overflow: hidden
+      #   segments:
       - style: plain
-        template: "󱦟 {{ .FormattedMs }}"
+        template: " 󱦟 {{ .FormattedMs }}"
         foreground: "#808080"
         background: transparent
         type: executiontime

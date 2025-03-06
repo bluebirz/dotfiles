@@ -48,7 +48,8 @@ local opt = {
   -- theme = "nordic",
   -- theme = "onedark",
   -- theme = "night-owl",
-  theme = "auto",
+  theme = "tokyonight",
+  -- theme = "auto",
   component_separators = { left = "", right = "" },
   section_separators = { left = "", right = "" },
 }
@@ -80,21 +81,22 @@ local git_str = {
   },
 }
 
--- local diff = {
---   "diff",
---   colored = true, -- Displays a colored diff status if set to true
---   diff_color = {
---     -- Same color values as the general color option can be used here.
---     -- added = "LuaLineDiffAdd", -- Changes the diff's added color
---     -- modified = "LuaLineDiffChange", -- Changes the diff's modified color
---     -- removed = "LuaLineDiffDelete", -- Changes the diff's removed color you
---     -- added = { fg = "#2b9416" }, -- Changes the diff's added color
---     -- modified = { fg = "#99911a" }, -- Changes the diff's modified color
---     -- removed = { fg = "#9c2721" }, -- Changes the diff's removed color you
---   },
---   -- symbols = { added = "+", modified = "~", removed = "-" }, -- Changes the symbols used by the diff.
---   -- symbols = { added = "󰜄 ", modified = " ", removed = "󰛲 " }, -- Changes the symbols used by the diff.
--- }
+local diff = {
+  "diff",
+  colored = true, -- Displays a colored diff status if set to true
+  diff_color = {
+    -- Same color values as the general color option can be used here.
+    -- added = "LuaLineDiffAdd", -- Changes the diff's added color
+    -- modified = "LuaLineDiffChange", -- Changes the diff's modified color
+    -- removed = "LuaLineDiffDelete", -- Changes the diff's removed color you
+    -- added = { fg = "#2b9416" }, -- Changes the diff's added color
+    -- modified = { fg = "#99911a" }, -- Changes the diff's modified color
+    -- removed = { fg = "#9c2721" }, -- Changes the diff's removed color you
+  },
+  -- symbols = { added = "+", modified = "~", removed = "-" }, -- Changes the symbols used by the diff.
+  -- symbols = { added = "󰜄 ", modified = " ", removed = "󰛲 " }, -- Changes the symbols used by the diff.
+}
+
 local diag = {
   "diagnostics",
   -- Displays diagnostics for the defined severity types
@@ -140,6 +142,7 @@ local filename = {
     unnamed = "[No Name]", -- Text to show for unnamed buffers.
     newfile = "[New]", -- Text to show for newly created file before first write
   },
+  -- color = { bg = "NONE" },
 }
 
 local filetype = {

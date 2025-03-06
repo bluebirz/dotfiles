@@ -25,7 +25,6 @@ return {
       "markdownlint-cli2",
       "marksman",
       "prettierd",
-      "python-lsp-server",
       "ruff-lsp",
       "shfmt",
       "stylua",

@@ -1,4 +1,4 @@
-return {
+local conf = {
   "utilyre/barbecue.nvim",
   name = "barbecue",
   version = "*",
@@ -48,3 +48,4 @@ return {
     })
   end,
 }
+return {}

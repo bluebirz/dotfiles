@@ -5,24 +5,30 @@ local colors = {
   light_orange = "#e5b987",
 }
 
-return {
+local conf = {
   "akinsho/bufferline.nvim",
   version = "*",
   event = "VeryLazy",
   dependencies = "nvim-tree/nvim-web-devicons",
   opts = {
     options = {
-      numbers = function(opts)
-        return string.format("%s", opts.raise(opts.ordinal))
-      end,
-      separator_style = "thin", -- "slant" | "slope" | "thick" | "thin"
+      mode = "buffers", -- "buffers" | "tabs"
+      -- numbers = function(opts)
+      --   return string.format("%s", opts.raise(opts.ordinal))
+      -- end,
+      separator_style = { "", "" }, -- "slant" | "slope" | "thick" | "thin" | { 'any', 'any' },
       show_close_icon = false,
-      show_buffer_close_icons = false,
+      show_buffer_icons = true,
       color_icons = true,
+      show_buffer_close_icons = false,
+      show_tab_indicators = false,
+      tab_size = 0,
+      max_name_length = 18,
       indicator = {
-        style = "icon", -- icon | underline | none
-        icon = " ",
-        -- style = "underline",
+        -- style = "icon", -- icon | underline | none
+        -- icon = " ",
+        style = "underline",
+        -- style = "none",
       },
       -- highlights = require("nord.plugins.bufferline").akinsho(),
     },
@@ -34,14 +40,14 @@ return {
         fg = colors.light_orange,
         -- bg = "#2780e6",
         bold = true,
-        italic = true,
+        italic = false,
       },
       -- indicator_visible = {
       --   fg = "<colour-value-here>",
       --   bg = "<colour-value-here>",
       -- },
       indicator_selected = {
-        fg = colors.light_orange,
+        -- fg = colors.light_orange,
         --   bg = "<colour-value-here>",
       },
       separator_selected = {
@@ -53,9 +59,11 @@ return {
         -- bg = "<colour-value-here>",
       },
       separator = {
-        fg = "#808080",
+        -- fg = "#808080",
         -- bg = "<colour-value-here>",
       },
     },
   },
 }
+
+return { conf }

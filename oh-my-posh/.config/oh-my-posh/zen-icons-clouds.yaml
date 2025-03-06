@@ -42,11 +42,11 @@ blocks:
         foreground: transparent
         background: "#F58534"
         template: "   {{.Profile}}{{if .Region}}@{{.Region}}{{end}} "
-  - type: rprompt
-    overflow: hidden
-    segments:
+      # - type: rprompt
+      #   overflow: hidden
+      #   segments:
       - style: plain
-        template: "󱦟 {{ .FormattedMs }}"
+        template: " 󱦟 {{ .FormattedMs }}"
         foreground: "#808080"
         background: transparent
         type: executiontime

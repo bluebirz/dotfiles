@@ -24,4 +24,4 @@ alias tmx="tmux attach"
 alias lgg="lazygit"
 alias lgd="lazydocker"
 
-alias lsz="eza -la -G --icons=always --color=always --git --no-user -o --total-size --time-style '+%Y-%m-%d %H:%M'"
+alias lsz="eza -la -G --icons=always --color=always --git --no-user --total-size --time-style '+%Y-%m-%d %H:%M'"
