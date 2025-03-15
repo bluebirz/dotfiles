@@ -10,6 +10,7 @@ tap "jesseduffield/lazygit"
 tap "mikesmithgh/git-prompt-string"
 
 brew "atuin"
+brew "awscli"
 brew "bat"
 brew "black", link: false
 brew "direnv"

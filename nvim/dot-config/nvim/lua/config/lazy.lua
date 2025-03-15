@@ -20,10 +20,15 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.terraform" },
     { import = "lazyvim.plugins.extras.lang.markdown" },
     { import = "lazyvim.plugins.extras.lang.docker" },
+
     { import = "lazyvim.plugins.extras.ui.treesitter-context" },
+
+    { import = "lazyvim.plugins.extras.editor.leap" },
+
     { import = "lazyvim.plugins.extras.coding.yanky" },
     { import = "lazyvim.plugins.extras.coding.neogen" },
-    { import = "lazyvim.plugins.extras.coding.mini-surround" },
+    -- { import = "lazyvim.plugins.extras.coding.mini-surround" },
+
     { import = "lazyvim.plugins.extras.ai.copilot" },
     { import = "lazyvim.plugins.extras.ai.copilot-chat" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
