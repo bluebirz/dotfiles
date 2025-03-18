@@ -7,7 +7,7 @@ unstow:
 	@stow --verbose --dotfiles --target=$$HOME --delete .
 
 plugins-install:
-	@cd ./.config/yazi
+	@cd ./dot-config/yazi
 	@ya pack -i
 	@git clone https://github.com/saumyajyoti/omp.yazi.git $$HOME/.config/yazi/plugins/omp.yazi
 
@@ -15,4 +15,4 @@ plugins-upgrade:
 	@ya pack -u
 
 update-init-lua:
-	@cp ./.config/yazi/init.lua.bak ./.config/yazi/init.lua
+	@cp ./dot-config/yazi/init.lua.bak ./dot-config/yazi/init.lua
