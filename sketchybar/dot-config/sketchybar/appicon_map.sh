@@ -4,6 +4,7 @@ function icon_map() {
   "activity monitor") icon_result=:activity_monitor: ;;
   "alacritty") icon_result=:alacritty: ;;
   "app store") icon_result=:app_store: ;;
+  "bitwarden") icon_result=:bit_warden: ;;
   "books") icon_result=:book: ;;
   "calculator") icon_result=:calculator: ;;
   "calendar") icon_result=:calendar: ;;

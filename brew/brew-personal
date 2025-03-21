@@ -63,6 +63,7 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
 cask "alt-tab"
+cask "bitwarden"
 cask "font-sf-pro"
 cask "font-sketchybar-app-font"
 cask "font-code-new-roman-nerd-font"
