@@ -3,4 +3,4 @@ local conf = {
   event = "VeryLazy",
 }
 
-return { conf }
+return {}
