@@ -1,17 +1,17 @@
 -- git
-THEME.git = THEME.git or {}
-THEME.git.modified = ui.Style():fg("yellow"):bold()
-THEME.git.deleted = ui.Style():fg("red"):bold()
--- THEME.git.untracked
--- THEME.git.ignored
-THEME.git.added = ui.Style():fg("green"):bold()
--- THEME.git.updated
-THEME.git.modified_sign = "M"
-THEME.git.deleted_sign = "D"
-THEME.git.added_sign = "A"
-THEME.git.untracked_sign = "?"
-THEME.git.ignored_sign = "I"
-THEME.git.updated_sign = "U"
+th.git = th.git or {}
+th.git.modified = ui.Style():fg("yellow"):bold()
+th.git.deleted = ui.Style():fg("red"):bold()
+-- th.git.untracked
+-- th.git.ignored
+th.git.added = ui.Style():fg("green"):bold()
+-- th.git.updated
+th.git.modified_sign = "M"
+th.git.deleted_sign = "D"
+th.git.added_sign = "A"
+th.git.untracked_sign = "?"
+th.git.ignored_sign = "I"
+th.git.updated_sign = "U"
 require("git"):setup()
 
 -- full-border
