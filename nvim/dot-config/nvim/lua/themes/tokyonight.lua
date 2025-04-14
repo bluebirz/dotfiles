@@ -10,4 +10,4 @@ local conf = {
   },
 }
 
-return { conf }
+return {}

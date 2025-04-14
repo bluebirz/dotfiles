@@ -48,17 +48,18 @@ local opt = {
   -- theme = "nordic",
   -- theme = "onedark",
   -- theme = "night-owl",
-  theme = "tokyonight",
-  -- theme = "auto",
+  -- theme = "tokyonight",
+  theme = "auto",
   component_separators = { left = "", right = "" },
   section_separators = { left = "", right = "" },
 }
 
 local modes = {
   "mode",
-  color = function()
-    return { bg = mode_color[vim.fn.mode()], fg = colors.black, gui = "bold" }
-  end,
+  -- color = function()
+  -- return { bg = mode_color[vim.fn.mode()], fg = colors.black, gui = "bold" }
+  -- return { fg = mode_color[vim.fn.mode()], bg = "NONE", gui = "bold" }
+  -- end,
 }
 
 local git_str = {
@@ -130,7 +131,8 @@ local unsave = {
       return ""
     end
   end,
-  color = { bg = colors.red, fg = colors.black },
+  -- color = { bg = colors.red, fg = colors.black },
+  color = { fg = colors.red, bg = "NONE" },
 }
 
 local filename = {
@@ -154,16 +156,16 @@ local filetype = {
 
 local progress = {
   "progress",
-  color = function()
-    return { bg = mode_color[vim.fn.mode()], fg = colors.black }
-  end,
+  -- color = function()
+  --   return { bg = mode_color[vim.fn.mode()], fg = colors.black }
+  -- end,
 }
 
 local location = {
   "location",
-  color = function()
-    return { bg = mode_color[vim.fn.mode()], fg = colors.black }
-  end,
+  -- color = function()
+  --   return { bg = mode_color[vim.fn.mode()], fg = colors.black }
+  -- end,
 }
 
 local current_formatter = {

@@ -37,7 +37,7 @@ local conf = {
       --   fg = "#000000",
       -- },
       buffer_selected = {
-        fg = colors.light_orange,
+        -- fg = colors.light_orange,
         -- bg = "#2780e6",
         bold = true,
         italic = false,
