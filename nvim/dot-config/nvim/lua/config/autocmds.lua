@@ -32,6 +32,13 @@ augroup END
 --   autocmd WinLeave * call s:DimInactiveWindow()
 -- ]])
 
+-- set bufferline transparent
+-- vim.cmd([[
+-- autocmd ColorScheme * highlight BufferLineFill guibg=none
+-- " autocmd ColorScheme * highlight BufferLineBackground guifg=#7a7c9e
+-- " autocmd ColorScheme * highlight BufferLineBufferSelected guifg=white gui=none
+-- ]])
+
 -- set cursorline
 -- vim.cmd([[
 --   set cursorline

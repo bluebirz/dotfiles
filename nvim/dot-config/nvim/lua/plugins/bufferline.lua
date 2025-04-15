@@ -1,4 +1,6 @@
 local colors = {
+  white = "#ffffff",
+  black = "#000000",
   blue = "#2780e6",
   orange = "#e68d27",
   light_blue = "#87b3e6",
@@ -19,7 +21,7 @@ local conf = {
       separator_style = { "", "" }, -- "slant" | "slope" | "thick" | "thin" | { 'any', 'any' },
       show_close_icon = false,
       show_buffer_icons = true,
-      color_icons = true,
+      color_icons = false,
       show_buffer_close_icons = false,
       show_tab_indicators = false,
       tab_size = 0,
@@ -27,8 +29,8 @@ local conf = {
       indicator = {
         -- style = "icon", -- icon | underline | none
         -- icon = " ",
-        style = "underline",
-        -- style = "none",
+        -- style = "underline",
+        style = "none",
       },
       -- highlights = require("nord.plugins.bufferline").akinsho(),
     },
@@ -36,8 +38,18 @@ local conf = {
       -- buffer_visible = {
       --   fg = "#000000",
       -- },
+      -- background = {
+      --   -- fg = '<colour-value-here>',
+      --   bg = "none",
+      -- },
+      -- fill = {
+      --   bg = {
+      --     attribute = "bg",
+      --     highlight = "Pmenu",
+      --   },
+      -- },
       buffer_selected = {
-        -- fg = colors.light_orange,
+        -- fg = colors.white,
         -- bg = "#2780e6",
         bold = true,
         italic = false,

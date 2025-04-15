@@ -5,6 +5,8 @@ local conf = {
   opts = {},
   config = function()
     require("monoglow").setup({
+      style = "void",
+      eob = true,
       transparent = true,
       -- Change the "glow" color
       on_colors = function(colors)
@@ -14,4 +16,4 @@ local conf = {
   end,
 }
 
-return { conf }
+return {}

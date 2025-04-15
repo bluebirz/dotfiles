@@ -1,5 +1,5 @@
 -- https://github.com/mistricky/codesnap.nvim
-return {
+local conf = {
   "mistricky/codesnap.nvim",
   build = "make build_generator",
   event = "VeryLazy",
@@ -16,3 +16,5 @@ return {
     watermark = "",
   },
 }
+
+return {}
