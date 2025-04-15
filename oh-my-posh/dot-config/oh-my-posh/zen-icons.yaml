@@ -8,7 +8,7 @@ blocks:
     segments:
       - style: plain
         template: "{{ .Path }} "
-        # foreground: "#e68d27"
+        foreground: "#87b3e6"
         background: transparent
         type: path
         properties:

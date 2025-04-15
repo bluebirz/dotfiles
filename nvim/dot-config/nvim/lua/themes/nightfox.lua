@@ -8,6 +8,11 @@ local conf = {
         dim_inactive = false,
         module_default = true,
       },
+      groups = {
+        all = {
+          NormalFloat = { fg = "fg1", bg = "NONE" },
+        },
+      },
     })
   end,
 }
