@@ -15,7 +15,7 @@ blocks:
           style: full
           folder_separator_icon: "  "
           home_icon: ""
-          # cycle: ["#87b3e6", "#e5b987", "#b3e587"]
+          right_format: "[%s]"
       - style: plain
         template:
           "{{ .UpstreamIcon }}  {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus

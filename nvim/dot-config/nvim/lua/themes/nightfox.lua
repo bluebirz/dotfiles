@@ -5,7 +5,7 @@ local conf = {
       options = {
         transparent = true,
         terminal_colors = true,
-        dim_inactive = false,
+        dim_inactive = true,
         module_default = true,
       },
       groups = {

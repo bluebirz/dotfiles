@@ -35,4 +35,4 @@ local conf = {
   end,
 }
 
-return { conf }
+return {}
