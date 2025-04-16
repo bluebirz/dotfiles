@@ -3,13 +3,15 @@ font-size = 14
 adjust-underline-position = +4
 adjust-cell-height = 55%
 adjust-cell-width = 0%
+adjust-cursor-height = 55%
+adjust-cursor-thickness = 200%
 
 macos-titlebar-style = hidden
 window-padding-x = 9,9
 window-padding-y = 9,5
 
 shell-integration-features = no-cursor
-cursor-color = #ffffff
+cursor-color = #87b3e6
 cursor-style = underline
 
 background-opacity = 0.85
