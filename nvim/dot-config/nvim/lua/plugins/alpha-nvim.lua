@@ -24,8 +24,8 @@ return {
       [[| `-' ||  ||  |    /  `-. ]],
       [[ `---' `--'`--'   `-----' ]],
     }
-    -- theta.header.opts.hl = pick_color()
-    --
+    theta.header.opts.hl = pick_color()
+
     theta.buttons.val = {
       { type = "text", val = "Operations", opts = { hl = "SpecialComment", position = "center" } },
       { type = "padding", val = 1 },
