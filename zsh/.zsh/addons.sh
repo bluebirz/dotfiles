@@ -27,3 +27,7 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # if brew ls --versions zsh-syntax-highlighting >/dev/null; then
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # fi
+#
+
+# fzf
+source <(fzf --zsh)

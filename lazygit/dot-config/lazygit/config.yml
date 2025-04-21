@@ -15,3 +15,4 @@ gui:
     activeBorderColor:
       - "#e5b987"
       - bold
+  expandFocusedSidePanel: true

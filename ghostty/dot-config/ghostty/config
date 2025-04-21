@@ -1,9 +1,9 @@
 font-family = "CodeNewRoman Nerd Font"
 font-size = 14
 adjust-underline-position = +4
-adjust-cell-height = 55%
+adjust-cell-height = 45%
 adjust-cell-width = 0%
-adjust-cursor-height = 55%
+adjust-cursor-height = 45%
 adjust-cursor-thickness = 200%
 
 macos-titlebar-style = hidden
@@ -12,7 +12,7 @@ window-padding-y = 9,5
 
 shell-integration-features = no-cursor
 cursor-color = #87b3e6
-cursor-style = underline
+cursor-style = bar
 
 background-opacity = 0.85
 background-blur = 40
