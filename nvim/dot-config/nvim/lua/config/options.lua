@@ -3,7 +3,7 @@
 -- Add any additional options here
 vim.opt.wrap = true
 vim.opt.whichwrap = "b,s,<,>,h,l"
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 vim.opt.list = true
 vim.opt.listchars = {
   tab = "→ ",

@@ -1,4 +1,4 @@
-return {
+local conf = {
   "iamcco/markdown-preview.nvim",
   cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
   event = "VeryLazy",
@@ -23,3 +23,5 @@ return {
 
   -- sh ~/.local/share/nvim/lazy/markdown-preview.nvim/app/install.sh
 }
+
+return { conf }
