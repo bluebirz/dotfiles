@@ -8,5 +8,15 @@ init:
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 install:
-	brew bundle --file=brew-$(type) --all
+	@brew bundle --file=brew-$(type) --all
 
+clean:
+	@brew cleanup
+	@brew autoremove
+	@brew doctor
+	# brew update
+	# brew upgrade
+	# brew outdated --quiet | xargs brew uninstall --force
+	# brew prune
+	# brew missing --quiet | xargs brew install --force
+	# brew bundle dump --force --file=brew-$(type) --all

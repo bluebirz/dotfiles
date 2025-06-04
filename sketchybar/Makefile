@@ -7,9 +7,12 @@ unstow:
 init:
 	@brew services start sketchybar
 
-update-rectangle-offset:
+enable-rectangle-offset:
 	@defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 32
 	# cr: https://www.josean.com/posts/sketchybar-setup
+
+disable-rectangle-offset:
+	@defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 24
 
 restart:
 	@brew services restart sketchybar
