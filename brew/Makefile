@@ -7,6 +7,9 @@ unstow:
 init:
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+export-all:
+	@brew bundle dump --all --force # --file=brew-$(type)
+
 install:
 	@brew bundle --file=brew-$(type) --all
 
