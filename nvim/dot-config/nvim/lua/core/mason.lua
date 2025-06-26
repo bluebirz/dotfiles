@@ -26,7 +26,7 @@ return {
       "marksman",
       "prettierd",
       "python-lsp-server",
-      "ruff-lsp",
+      "ruff",
       "shfmt",
       "stylua",
       "terraform-ls",
