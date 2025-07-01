@@ -28,6 +28,8 @@ return {
       "python-lsp-server",
       "ruff",
       "shfmt",
+      "sqlfluff",
+      "sqlfmt",
       "stylua",
       "terraform-ls",
       "tflint",

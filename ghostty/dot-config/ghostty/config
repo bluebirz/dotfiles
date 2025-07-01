@@ -14,6 +14,6 @@ shell-integration-features = no-cursor
 cursor-color = #87b3e6
 cursor-style = bar
 
-background-opacity = 0.85
-background-blur = 20
+background-opacity = 0.90
+background-blur = 10
 theme = "nightfox-carbonfox.conf"
