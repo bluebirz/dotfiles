@@ -10,6 +10,7 @@ upd() (
   echo ${HIGHLIGHT}${PREFIX}'Homebrew'${SUFFIX}${RESET} && brew update && brew upgrade
   echo ${HIGHLIGHT}${PREFIX}'GCloud'${SUFFIX}${RESET} && echo 'Y' | gcloud components update
   echo ${HIGHLIGHT}${PREFIX}'Devbox'${SUFFIX}${RESET} && devbox version update
+  echo ${HIGHLIGHT}${PREFIX}'TLDR'${SUFFIX}${RESET} && tldr -u
   echo ${TIMESTAMPER}'Finished at '$(date "+%Y-%m-%d %H:%M:%S")${RESET}
 )
 
