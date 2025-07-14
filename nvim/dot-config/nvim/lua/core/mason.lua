@@ -17,6 +17,7 @@ return {
       "goimports",
       "gopls",
       "hadolint",
+      "hclfmt",
       "isort",
       "json-lsp",
       "lua-language-server",

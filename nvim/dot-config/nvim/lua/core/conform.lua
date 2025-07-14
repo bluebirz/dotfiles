@@ -22,6 +22,7 @@ return {
         python = { "isort", "black" },
         sh = { "shfmt" },
         sql = { "sqlfluff" }, --, "sqlfmt" },
+        tf = { "terraform_fmt" },
         yaml = { "prettierd" },
       },
       formatters = {
