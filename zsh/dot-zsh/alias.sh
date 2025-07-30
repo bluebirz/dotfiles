@@ -14,9 +14,10 @@ upd() (
   echo ${TIMESTAMPER}'Finished at '$(date "+%Y-%m-%d %H:%M:%S")${RESET}
 )
 
-alias nv="nvim"   # nvim
-alias yz="yazi ." # yazi
-alias zl="zellij" # zellij
+alias nv="nvim"      # nvim
+alias yz="yazi ."    # yazi
+alias tf="terraform" # terraform
+alias zl="zellij"    # zellij
 # alias prep_py="python3 -m venv venv && echo \"source venv/bin/activate\nlayout python\" > .envrc && direnv allow"
 alias dus="du -h -d 1 | sort -h"
 alias lsh="ls -lah | sort -h"
