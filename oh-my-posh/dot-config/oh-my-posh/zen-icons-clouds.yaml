@@ -46,7 +46,7 @@ blocks:
       #   overflow: hidden
       #   segments:
       - style: plain
-        template: " 󱦟 {{ .FormattedMs }}"
+        template: " 󰔟 {{ .FormattedMs }}"
         foreground: "#808080"
         background: transparent
         type: executiontime
