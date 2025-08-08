@@ -15,6 +15,15 @@ vim.cmd([[
 augroup END
 ]])
 
+-- default filetypes
+vim.cmd([[
+  augroup default_filetypes
+    autocmd!
+    " Set filetype for specific file extensions
+    autocmd BufNewFile,BufRead *.sqlfluff set filetype=dosini
+  augroup END
+]])
+
 -- dim inactive windows
 -- vim.cmd([[
 --   hi def Dim cterm=none ctermbg=none ctermfg=242
