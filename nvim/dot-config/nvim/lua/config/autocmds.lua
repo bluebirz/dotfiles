@@ -21,6 +21,7 @@ vim.cmd([[
     autocmd!
     " Set filetype for specific file extensions
     autocmd BufNewFile,BufRead *.sqlfluff set filetype=dosini
+    autocmd BufNewFile,BufRead *.tf set filetype=terraform
   augroup END
 ]])
 
