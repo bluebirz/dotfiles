@@ -7,17 +7,17 @@
   brm = "!f() { git push origin -d \"$1\" && git branch -d \"$1\"; }; f"
   ign = "!f() { git rm -r --cached . && git add . ; }; f"
 
-  lob = log --all --graph --abbrev-commit --decorate --date=format-local:'%Y-%m-%d %H:%M:%S' --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%ad%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
-  dff = diff -u
-  dffs = diff --staged
-  cko = checkout
-  stt = status -u
-  baa = branch -a
-  rss = reset --soft HEAD^
-  rsh = reset --hard HEAD^
-  wta = worktree add
-  wtl = worktree list
-  wtr = worktree remove
-  als = config --get-regexp alias
-  pullr = pull --rebase
-  undo = rebase --abort
+  lob = "log --all --graph --color=always --abbrev-commit --decorate --date=format-local:'%Y-%m-%d' --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%ad%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) - %C(#808080)%an%C(reset)'"
+  dff = "diff -u"
+  dffs = "diff --staged"
+  cko = "checkout"
+  stt = "status -u"
+  baa = "branch -a"
+  rss = "reset --soft HEAD^"
+  rsh = "reset --hard HEAD^"
+  wta = "worktree add"
+  wtl = "worktree list"
+  wtr = "worktree remove"
+  als = "config --get-regexp alias"
+  pullr = "pull --rebase"
+  undo = "rebase --abort"

@@ -4,9 +4,9 @@ git:
     colorArg: always
     pager: delta --dark --paging=never
   # Command used when displaying the current branch git log in the main window
-  branchLogCmd: git log --graph --color=always --abbrev-commit --decorate --date=format-local:'%Y-%m-%d %H:%M:%S' --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%ad%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' {{branchName}} --
+  branchLogCmd: git log --all --graph --color=always --abbrev-commit --decorate --date=format-local:'%Y-%m-%d' --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%ad%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) - %C(#808080)%an%C(reset)' {{branchName}} --
   allBranchesLogCmds:
-    - git log --graph --all --color=always --abbrev-commit --decorate --date=format-local:'%Y-%m-%d %H:%M:%S' --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%ad%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+    - git log log --all --graph --color=always --abbrev-commit --decorate --date=format-local:'%Y-%m-%d' --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%ad%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) - %C(#808080)%an%C(reset)'
 gui:
   theme:
     # Border color of focused window
