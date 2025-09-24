@@ -78,11 +78,11 @@ blocks:
           - "{{if gt .Code 0}}#e68d27{{end}}"
           - "{{if eq .Code 0}}#2780e6{{end}}"
         background: transparent
-        template: 
+        template: " "
 
 transient_prompt:
   template: " "
-  foreground: ""
+  foreground: "#2780e6"
   background: transparent
   foreground_templates:
     - "{{if gt .Code 0}}#e68d27{{end}}"

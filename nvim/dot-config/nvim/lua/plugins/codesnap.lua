@@ -10,11 +10,16 @@ local conf = {
   opts = {
     -- save_path = "~/Pictures",
     save_path = "~/Desktop",
-    code_font_family = "FantasqueSansM Nerd Font",
+    code_font_family = "CodeNewRoman Nerd Font",
     has_breadcrumbs = false,
+    has_line_number = true,
+    show_workspace = false,
+    min_width = 0,
     bg_theme = "sea",
+    bg_x_padding = 9,
+    bg_y_padding = 9,
     watermark = "",
   },
 }
 
-return {}
+return { conf }
