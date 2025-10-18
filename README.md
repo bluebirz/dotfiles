@@ -1,19 +1,26 @@
 # Dotfiles
 
-## snapshot @ 2025-04-15
+## snapshot @ 2025-10-18
 
-<img src="./_img/Screenshot 2568-04-15 at 18.52.42.png" alt="snapshot">
+<img src="./_img/Screenshot 2568-10-18 at 20.41.57.png" alt="snapshot">
 
 ## Current setup
 
+- `atuin`: shell history module
 - `brew`: package manager
+- `devbox`: isolate development environment
+- `direnv`: environment variables loader
+- `eza`: a modern alternative to ls
+- `fastfetch`: neofetch like system information tool
 - `ghostty`: terminal emulator
-- `lazygit`: git console
+- `lazydocker`: the lazier way to manage everything docker
+- `lazygit`: simple terminal UI for git commands
 - `nvim`: text editor
 - `oh-my-posh`: prompt theme on top of `zsh`
 - `oh-my-zsh`: a framework for `zsh`
-- `sketchybar`: customized menu bar
+- `Rectangle`: macos windows tiling
 - `tmux`: terminal multiplexer for workspaces
+- `yazi`: terminal file manager
 - `zsh`: a unix shell
 
 ## [makefile](https://makefiletutorial.com/)
