@@ -6,7 +6,7 @@ local colors = {
   cyan = "#70C0BA",
   darkred = "#FB7373",
   fg = "#C7C7CA",
-  gray = "#222730",
+  gray = "#6A6A6A",
   green = "#79DCAA",
   lightgray = "#454C5C",
   lime = "#54CED6",
@@ -147,6 +147,13 @@ local filename = {
   -- color = { bg = "NONE" },
 }
 
+local lsp_progress = {
+  function()
+    return require("lsp-progress").progress()
+  end,
+  color = { fg = colors.gray, bg = "NONE" },
+}
+
 local filetype = {
   "filetype",
   colored = true, -- Displays filetype icon in color if set to true
@@ -188,7 +195,7 @@ local current_formatter = {
         table.insert(formatterNames, formatter)
       end
 
-      return icon .. " " .. table.concat(formatterNames, " ")
+      return icon .. " " .. table.concat(formatterNames, ", ")
     end
 
     -- Check if there's an LSP formatter
@@ -201,6 +208,7 @@ local current_formatter = {
 
     return ""
   end,
+  color = { fg = colors.gray, bg = "NONE" },
 }
 
 -- ========================== composition ==========================
@@ -213,7 +221,9 @@ return {
       opts.sections.lualine_a = { modes }
       opts.sections.lualine_b = { unsave, git_str, diag }
       opts.sections.lualine_c = { filename }
-      -- opts.sections.lualine_x = { "encoding", "fileformat", "filetype" }
+      table.insert(opts.sections.lualine_x, 1, current_formatter)
+      table.insert(opts.sections.lualine_x, 1, lsp_progress)
+      -- opts.sections.lualine_x = current_x
       opts.sections.lualine_y = { filetype }
       opts.sections.lualine_z = { progress, location }
     end,

@@ -12,3 +12,7 @@ vim.keymap.set("n", "<C-a>", "ggVG", { desc = "Select all" })
 -- vim.keymap.set({ "n", "v", "i" }, "<C-S-s>", "<cmd>echo 'noa w'<CR>", { desc = "Save without formatting" })
 
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Quit terminal mode" })
+
+-- copilot
+vim.keymap.set("n", "<leader>ad", ":Copilot disable<cr>", { silent = true, noremap = true })
+vim.keymap.set("n", "<leader>ae", ":Copilot enable<cr>", { silent = true, noremap = true })

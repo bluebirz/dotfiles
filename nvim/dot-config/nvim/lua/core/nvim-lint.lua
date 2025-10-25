@@ -24,6 +24,15 @@ return {
       end,
     })
 
+    -- credit: https://github.com/neovim/neovim/issues/26977
+    vim.api.nvim_create_autocmd("Filetype", {
+      pattern = "sql",
+      callback = function()
+        vim.keymap.del("i", "<left>", { buffer = true })
+        vim.keymap.del("i", "<right>", { buffer = true })
+      end,
+    })
+
     vim.keymap.set("n", "<leader>ml", function()
       lint.try_lint()
     end, { desc = "Trigger linting for current file" })

@@ -21,7 +21,7 @@ return {
         markdown = { "markdownlint-cli2" },
         python = { "isort", "black" },
         sh = { "shfmt" },
-        sql = { "sqlfluff" }, --, "sqlfmt" },
+        sql = { "sqlfluff", "sqlfmt" },
         tf = { "terraform_fmt" },
         yaml = { "prettierd" },
       },
