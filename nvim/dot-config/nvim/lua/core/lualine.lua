@@ -18,28 +18,28 @@ local colors = {
   yellow = "#FFE59E",
 }
 
-local mode_color = {
-  [""] = colors.orange,
-  [""] = colors.blue,
-  ["!"] = colors.red,
-  ["R"] = colors.purple,
-  ["Rv"] = colors.purple,
-  ["S"] = colors.orange,
-  ["V"] = colors.blue,
-  ["c"] = colors.purple,
-  ["ce"] = colors.red,
-  ["cv"] = colors.red,
-  ["i"] = colors.red,
-  ["ic"] = colors.yellow,
-  ["n"] = colors.green,
-  ["no"] = colors.red,
-  ["r"] = colors.cyan,
-  ["r?"] = colors.cyan,
-  ["rm"] = colors.cyan,
-  ["s"] = colors.orange,
-  ["t"] = colors.white,
-  ["v"] = colors.blue,
-}
+-- local mode_color = {
+--   [""] = colors.orange,
+--   [""] = colors.blue,
+--   ["!"] = colors.red,
+--   ["R"] = colors.purple,
+--   ["Rv"] = colors.purple,
+--   ["S"] = colors.orange,
+--   ["V"] = colors.blue,
+--   ["c"] = colors.purple,
+--   ["ce"] = colors.red,
+--   ["cv"] = colors.red,
+--   ["i"] = colors.red,
+--   ["ic"] = colors.yellow,
+--   ["n"] = colors.green,
+--   ["no"] = colors.red,
+--   ["r"] = colors.cyan,
+--   ["r?"] = colors.cyan,
+--   ["rm"] = colors.cyan,
+--   ["s"] = colors.orange,
+--   ["t"] = colors.white,
+--   ["v"] = colors.blue,
+-- }
 
 local opt = {
   -- theme = "codedark",
@@ -82,21 +82,21 @@ local git_str = {
   },
 }
 
-local diff = {
-  "diff",
-  colored = true, -- Displays a colored diff status if set to true
-  diff_color = {
-    -- Same color values as the general color option can be used here.
-    -- added = "LuaLineDiffAdd", -- Changes the diff's added color
-    -- modified = "LuaLineDiffChange", -- Changes the diff's modified color
-    -- removed = "LuaLineDiffDelete", -- Changes the diff's removed color you
-    -- added = { fg = "#2b9416" }, -- Changes the diff's added color
-    -- modified = { fg = "#99911a" }, -- Changes the diff's modified color
-    -- removed = { fg = "#9c2721" }, -- Changes the diff's removed color you
-  },
-  -- symbols = { added = "+", modified = "~", removed = "-" }, -- Changes the symbols used by the diff.
-  -- symbols = { added = "󰜄 ", modified = " ", removed = "󰛲 " }, -- Changes the symbols used by the diff.
-}
+-- local diff = {
+--   "diff",
+--   colored = true, -- Displays a colored diff status if set to true
+--   diff_color = {
+--     -- Same color values as the general color option can be used here.
+--     -- added = "LuaLineDiffAdd", -- Changes the diff's added color
+--     -- modified = "LuaLineDiffChange", -- Changes the diff's modified color
+--     -- removed = "LuaLineDiffDelete", -- Changes the diff's removed color you
+--     -- added = { fg = "#2b9416" }, -- Changes the diff's added color
+--     -- modified = { fg = "#99911a" }, -- Changes the diff's modified color
+--     -- removed = { fg = "#9c2721" }, -- Changes the diff's removed color you
+--   },
+--   -- symbols = { added = "+", modified = "~", removed = "-" }, -- Changes the symbols used by the diff.
+--   -- symbols = { added = "󰜄 ", modified = " ", removed = "󰛲 " }, -- Changes the symbols used by the diff.
+-- }
 
 local diag = {
   "diagnostics",
