@@ -1,8 +1,8 @@
 # doc: https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md
 git:
-  paging:
-    colorArg: always
-    pager: delta --dark --paging=never
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never
   # Command used when displaying the current branch git log in the main window
   branchLogCmd: git log --all --graph --color=always --abbrev-commit --decorate --date=format-local:'%Y-%m-%d' --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%ad%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) - %C(#808080)%an%C(reset)' {{branchName}} --
   allBranchesLogCmds:
