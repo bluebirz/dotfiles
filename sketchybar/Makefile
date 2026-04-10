@@ -8,11 +8,11 @@ init:
 	@brew services start sketchybar
 
 enable-rectangle-offset:
-	@defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 32
+	@defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 5
 	# cr: https://www.josean.com/posts/sketchybar-setup
 
 disable-rectangle-offset:
-	@defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 24
+	@defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 0
 
 restart:
 	@brew services restart sketchybar

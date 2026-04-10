@@ -1,5 +1,5 @@
 return {
-  "williamboman/mason.nvim",
+  "mason-org/mason.nvim",
   -- version = "^1.0.0", -- TODO: check when they fix the changes
   opts = {
     ui = {

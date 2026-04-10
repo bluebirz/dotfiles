@@ -23,7 +23,7 @@ alias zl="zellij"    # zellij
 alias dus="du -h -d 1 | sort -h"
 alias lsh="ls -lah | sort -h"
 alias dvb="devbox"
-alias tmx="tmux attach"
+alias tmx="if [[ ! -z $(which tmux) ]]; then tmux attach || tmux new; else echo 'tmux is not installed'; fi"
 alias lgg="lazygit"
 alias lgd="lazydocker"
 

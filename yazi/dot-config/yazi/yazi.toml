@@ -2,6 +2,7 @@
 [mgr]
 show_hidden = true
 show_symlink = true
+ratio = [1, 2, 2]
 
 [opener]
 edit = [
@@ -11,12 +12,12 @@ edit = [
 # git.yazi
 [[plugin.prepend_fetchers]]
 id   = "git"
-name = "*"
+url = "*"
 run  = "git"
 
 [[plugin.prepend_fetchers]]
 id   = "git"
-name = "*/"
+url = "*/"
 run  = "git"
 
 

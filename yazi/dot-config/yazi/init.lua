@@ -25,21 +25,21 @@ require("omp"):setup({ config = "~/.config/oh-my-posh/zen-icons.yaml" })
 
 -- yaziline
 -- THEME.which.separator_style.fg = "#808080"
-require("yaziline"):setup({
-	color = "#87b3e6", -- main theme color
-	separator_style = "empty", -- "angly" | "curvy" | "liney" | e "empty"
-	separator_open = "",
-	separator_close = "",
-	separator_open_thin = "",
-	separator_close_thin = "",
-	separator_head = "",
-	separator_tail = "",
-	select_symbol = "",
-	yank_symbol = "󰆐",
-	filename_max_length = 48, -- truncate when filename > 24
-	filename_truncate_length = 6, -- leave 6 chars on both sides
-	filename_truncate_separator = "...", -- the separator of the truncated filename
-})
+-- require("yaziline"):setup({
+-- 	color = "#87b3e6", -- main theme color
+-- 	separator_style = "empty", -- "angly" | "curvy" | "liney" | e "empty"
+-- 	separator_open = "",
+-- 	separator_close = "",
+-- 	separator_open_thin = "",
+-- 	separator_close_thin = "",
+-- 	separator_head = "",
+-- 	separator_tail = "",
+-- 	select_symbol = "",
+-- 	yank_symbol = "󰆐",
+-- 	filename_max_length = 48, -- truncate when filename > 24
+-- 	filename_truncate_length = 6, -- leave 6 chars on both sides
+-- 	filename_truncate_separator = "...", -- the separator of the truncated filename
+-- })
 
 -- move line mode to left
 -- local current_redraw = Current.redraw

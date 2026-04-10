@@ -8,11 +8,11 @@ unstow:
 
 plugins-install:
 	@cd ./dot-config/yazi
-	@ya pack -i
+	@ya pkg install
 	@git clone https://github.com/saumyajyoti/omp.yazi.git $$HOME/.config/yazi/plugins/omp.yazi
 
 plugins-upgrade:
-	@ya pack -u
+	@ya pkg upgrade
 
 update-init-lua:
 	@cp ./dot-config/yazi/init.lua.bak ./dot-config/yazi/init.lua

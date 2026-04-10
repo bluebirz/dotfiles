@@ -1,4 +1,4 @@
-return {
+local conf = {
   "nvim-treesitter/nvim-treesitter",
   highlight = { enable = true },
   indent = { enable = true },
@@ -29,3 +29,5 @@ return {
     })
   end,
 }
+
+return { conf }

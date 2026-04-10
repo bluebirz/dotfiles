@@ -4,7 +4,7 @@ local conf = {
     -- You can choose one of the following pickers
     -- 'nvim-telescope/telescope.nvim',
     "ibhagwan/fzf-lua",
-    -- 'echasnovski/mini.pick',
+    -- 'nvim-mini/mini.pick',
   },
   keys = {
     { "<leader>mp", "", desc = "Live Preview" },

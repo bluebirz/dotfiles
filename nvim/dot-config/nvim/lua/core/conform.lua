@@ -2,7 +2,7 @@ return {
   -- formatters with conform.nvim
   -- credit: https://www.josean.com/posts/neovim-linting-and-formatting
   "stevearc/conform.nvim",
-  dependencies = { "williamboman/mason.nvim" },
+  dependencies = { "mason-org/mason.nvim" },
   opts = function()
     local opts = {
       default_format_opts = {

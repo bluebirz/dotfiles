@@ -69,6 +69,7 @@ require("lazy").setup({
         "tutor",
         "zipPlugin",
       },
+      -- reset = false, -- turn off runtime path reset
     },
   },
 })
