@@ -11,12 +11,14 @@ edit = [
 
 # git.yazi
 [[plugin.prepend_fetchers]]
-id   = "git"
+# id   = "git"
+group = "git"
 url = "*"
 run  = "git"
 
 [[plugin.prepend_fetchers]]
-id   = "git"
+# id   = "git"
+group = "git"
 url = "*/"
 run  = "git"
 

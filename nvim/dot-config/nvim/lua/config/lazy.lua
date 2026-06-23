@@ -23,7 +23,7 @@ require("lazy").setup({
 
     { import = "lazyvim.plugins.extras.ui.treesitter-context" },
 
-    { import = "lazyvim.plugins.extras.editor.leap" },
+    -- { import = "lazyvim.plugins.extras.editor.leap" },
 
     { import = "lazyvim.plugins.extras.coding.yanky" },
     { import = "lazyvim.plugins.extras.coding.neogen" },

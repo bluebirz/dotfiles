@@ -1,4 +1,5 @@
-return {
+-- LSP signature hint as you type
+local conf = {
   "ray-x/lsp_signature.nvim",
   event = "VeryLazy",
   opts = {
@@ -14,3 +15,5 @@ return {
     require("lsp_signature").setup(opts)
   end,
 }
+
+return { conf }

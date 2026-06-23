@@ -1,3 +1,5 @@
+-- Peek preview window for LSP locations in Neovim
+
 local conf = {
   "dnlhc/glance.nvim",
   opts = {

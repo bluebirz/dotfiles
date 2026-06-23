@@ -16,3 +16,7 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Quit terminal mode" })
 -- copilot
 vim.keymap.set("n", "<leader>ad", ":Copilot disable<cr>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader>ae", ":Copilot enable<cr>", { silent = true, noremap = true })
+
+-- leap
+-- vim.keymap.set({ "n", "x", "o" }, "f", "<Plug>(leap)")
+-- vim.keymap.set("n", "F", "<Plug>(leap-from-window)")

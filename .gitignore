@@ -19,3 +19,6 @@ lazy-lock.json
 #submodules
 yazi/.config/yazi/plugins/
 yazi/.config/yazi/init.lua
+/vscodium/extensions/extensions/*/
+/yazi/dot-config/yazi/plugins
+/yazi/dot-config/yazi/plugins

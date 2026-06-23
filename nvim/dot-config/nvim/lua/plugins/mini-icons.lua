@@ -1,3 +1,5 @@
+-- Icon provider
+
 return {
   "nvim-mini/mini.icons",
   lazy = true,

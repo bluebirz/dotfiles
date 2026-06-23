@@ -1,3 +1,5 @@
+-- Neovim Lua plugin with fast and feature-rich surround actions. Part of 'mini.nvim' library.
+--
 local conf = {
   "nvim-mini/mini.surround",
   lazy = true,

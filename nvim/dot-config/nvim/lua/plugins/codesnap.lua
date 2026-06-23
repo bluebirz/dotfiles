@@ -1,4 +1,5 @@
--- https://github.com/mistricky/codesnap.nvim
+-- Snapshot plugin with rich features that can make pretty code snapshots for Neovim
+
 local conf = {
   "mistricky/codesnap.nvim",
   build = "make build_generator",
@@ -22,4 +23,4 @@ local conf = {
   },
 }
 
-return { conf }
+return {}

@@ -36,6 +36,13 @@ blocks:
       #   overflow: hidden
       #   segments:
       - style: plain
+        template: "   {{ .CurrentDate | date .Format }}"
+        foreground: "#808080"
+        background: transparent
+        type: time
+        options:
+          time_format: 2 Jun 15:04
+      - style: plain
         template: " 󰔟 {{ .FormattedMs }}"
         foreground: "#808080"
         background: transparent
