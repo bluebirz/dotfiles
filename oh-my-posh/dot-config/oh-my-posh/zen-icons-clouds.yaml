@@ -51,7 +51,7 @@ blocks:
         background: transparent
         type: time
         options:
-          time_format: 2 Jun 15:04
+          time_format: 2 Jan 15:04
       - style: plain
         template: " 󰔟 {{ .FormattedMs }}"
         foreground: "#808080"

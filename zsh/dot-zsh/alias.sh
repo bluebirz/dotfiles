@@ -6,13 +6,13 @@ upd() (
   PREFIX="\$ Updating "
   SUFFIX="... "
 
-  echo ${TIMESTAMPER}'Running at '$(date "+%Y-%m-%d %H:%M:%S")${RESET}
-  echo ${HIGHLIGHT}${PREFIX}'Homebrew'${SUFFIX}${RESET} && brew update && brew upgrade
+  echo ${TIMESTAMPER}'Running at '$(date '+%a %F %X %Z')${RESET}
+  echo ${HIGHLIGHT}${PREFIX}'Homebrew'${SUFFIX}${RESET} && brew update && brew upgrade --force --no-ask --quiet
   echo ${HIGHLIGHT}${PREFIX}'GCloud'${SUFFIX}${RESET} && echo 'Y' | gcloud components update
   echo ${HIGHLIGHT}${PREFIX}'Devbox'${SUFFIX}${RESET} && devbox version update
   echo ${HIGHLIGHT}${PREFIX}'Rust'${SUFFIX}${RESET} && rustup update
   echo ${HIGHLIGHT}${PREFIX}'TLDR'${SUFFIX}${RESET} && tldr -u
-  echo ${TIMESTAMPER}'Finished at '$(date "+%Y-%m-%d %H:%M:%S")${RESET}
+  echo ${TIMESTAMPER}'Finished at '$(date '+%a %F %X %Z')${RESET}
 )
 
 alias nv="nvim"      # nvim

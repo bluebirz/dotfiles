@@ -1,6 +1,6 @@
 [alias]
   acp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
-  fpa = "!f() { git fetch --all && git pull --all && git remote prune origin && LANG=en_US && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d; }; f"
+  fpa = "!f() { git fetch --all && git pull --all && git remote prune origin && LANG=en_US; delb=$(git branch -vv | awk '/: gone]/{print $1}'); if [ -n \"$delb\" ]; then echo \"$delb\" | while IFS= read -r b; do git branch -d \"$b\"; done; fi; }; f"
   mdr = "!f() { git merge --no-commit --no-ff $@ && git reset --merge; }; f"
   mrg = "!f() { git merge $1 -m \"merge from $1\" --no-ff  && git push; }; f"
   ckb = "!f() { git checkout -b $@ && git push --set-upstream origin $@; }; f"
