@@ -13,8 +13,10 @@
   cko = "checkout"
   stt = "status -u"
   baa = "branch -a"
-  rss = "reset --soft HEAD^"
-  rsh = "reset --hard HEAD^"
+  rss = "reset --soft HEAD^"    # reset to last commit. uncommit changes but staged
+  rsm = "reset --mixed HEAD^"   # reset to last commit. uncommit changes and unstaged
+  rsh = "reset --hard HEAD^"    # reset to last commit. uncommit changes and discard all changes
+  rvr = "revert HEAD --no-edit" # revert to last commit
   wta = "worktree add"
   wtl = "worktree list"
   wtr = "worktree remove"
