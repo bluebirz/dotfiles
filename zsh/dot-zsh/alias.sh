@@ -1,17 +1,24 @@
 alias lsofp="sudo lsof -iTCP -sTCP:LISTEN -n -P"
-upd() (
-  HIGHLIGHT="\033[1;94m"
-  TIMESTAMPER="\033[31m"
+_custom_highlight() (
+  HIGHLIGHT="\033[1;40m"
+  HIGHLIGHT_FMT="%-$(tput cols)s"
   RESET="\033[0m"
-  PREFIX="\$ Updating "
+  PREFIX=" \$ Updating "
   SUFFIX="... "
 
+  echo ${HIGHLIGHT} && printf "${HIGHLIGHT_FMT}" "${PREFIX}${1}${SUFFIX}" && echo ${RESET}
+)
+upd() (
+  TIMESTAMPER="\033[31m"
+  RESET="\033[0m"
+
   echo ${TIMESTAMPER}'Running at '$(date '+%a %F %X %Z')${RESET}
-  echo ${HIGHLIGHT}${PREFIX}'Homebrew'${SUFFIX}${RESET} && brew update && brew upgrade --force --no-ask --quiet
-  echo ${HIGHLIGHT}${PREFIX}'GCloud'${SUFFIX}${RESET} && echo 'Y' | gcloud components update
-  echo ${HIGHLIGHT}${PREFIX}'Devbox'${SUFFIX}${RESET} && devbox version update
-  echo ${HIGHLIGHT}${PREFIX}'Rust'${SUFFIX}${RESET} && rustup update
-  echo ${HIGHLIGHT}${PREFIX}'TLDR'${SUFFIX}${RESET} && tldr -u
+  _custom_highlight "Homebrew" && brew update && brew upgrade --force --no-ask --quiet
+  _custom_highlight "GCloud" && echo 'Y' | gcloud components update
+  _custom_highlight "Devbox" && devbox version update
+  _custom_highlight "Rust" && rustup update
+  _custom_highlight "Mole" && mo update --force
+  _custom_highlight "TLDR" && tldr -u
   echo ${TIMESTAMPER}'Finished at '$(date '+%a %F %X %Z')${RESET}
 )
 
