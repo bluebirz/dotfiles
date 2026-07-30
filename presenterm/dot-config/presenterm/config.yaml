@@ -1,0 +1,7 @@
+snippet:
+  render:
+    threads: 2
+mermaid:
+  scale: 5 # try 3–5; default is comparatively low
+defaults:
+  validate_overflows: always

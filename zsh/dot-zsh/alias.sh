@@ -18,14 +18,15 @@ upd() (
   _custom_highlight "Devbox" && devbox version update
   _custom_highlight "Rust" && rustup update
   _custom_highlight "Mole" && mo update --force
-  _custom_highlight "TLDR" && tldr -u
+  _custom_highlight "TLDR" && tldr --update --verbose
   echo ${TIMESTAMPER}'Finished at '$(date '+%a %F %X %Z')${RESET}
 )
 
-alias nv="nvim"      # nvim
-alias yz="yazi ."    # yazi
-alias tf="terraform" # terraform
-alias zl="zellij"    # zellij
+alias nv="nvim"             # nvim
+alias yz="yazi ."           # yazi
+alias rgf="rg --files | rg" # rg files
+alias tf="terraform"        # terraform
+alias zl="zellij"           # zellij
 # alias prep_py="python3 -m venv venv && echo \"source venv/bin/activate\nlayout python\" > .envrc && direnv allow"
 alias dus="du -h -d 1 | sort -h"
 alias lsh="ls -lah | sort -h"
